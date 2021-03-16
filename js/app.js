@@ -435,3 +435,17 @@ function scroll_scroll() {
 setTimeout(function () {
 	scroll_scroll();
 }, 800);
+
+let popupCityCloses = document.querySelectorAll('.popup__link');
+let popupCity = document.querySelector('.popup_city');
+
+for (let i = 0; i < popupCityCloses.length; i++) {
+	let popupCityClose = popupCityCloses[i];
+
+	popupCityClose.addEventListener('click', function(e) {
+		if (popupCity.classList.contains('_active')) {
+			e.stopPropagation();
+			popupCity.classList.remove('_active');
+		}
+	});
+}

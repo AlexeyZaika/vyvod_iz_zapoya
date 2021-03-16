@@ -2328,4 +2328,8 @@ textarea.form-popup__input {
   .preview__title br {
     display: inline-block;
   }
+
+  .page-form__button span {
+    font-size: 18px;
+  }
 }
