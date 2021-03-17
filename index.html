@@ -6,14 +6,9 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="keywords" content="выведение, запой, на дому, Med24.online, выезд, круглосуточно, недорого, анонимно, нарколог">
 	<meta name="description" content="Вывод из запоя на дому в вашем городе. Капельница. Гарантируем анонимность и результат. Делаем предварительную диагностику: ЭКГ, глюкозу и др.">
-	<link rel="preload" href="fonts/PTSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="fonts/PTSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="fonts/FiraSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="fonts/FiraSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="fonts/PTSans-Bold.woff" as="font" type="font/woff" crossorigin>
-	<link rel="preload" href="fonts/PTSans-Regular.woff" as="font" type="font/woff" crossorigin>
-	<link rel="preload" href="fonts/FiraSans-Bold.woff" as="font" type="font/woff" crossorigin>
-	<link rel="preload" href="fonts/FiraSans-Regular.woff" as="font" type="font/woff" crossorigin>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=PT+Sans:wght@400;700&display=swap&subset=cyrillic-ext">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=PT+Sans:wght@400;700&display=swap&subset=cyrillic-ext" media="print" onload="this.media='all'">
 	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="shortcut icon" href="img/favicon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,11 +24,11 @@
 		<div class="header__info info-header">
 			<div class="info-header__column info-header__column_1">
 				<div class="info-header__item info-header__item_shedule">
-					<img class="info-header__icon" src="img/icons/check-icon.png" alt="" loading="lazy">
+					<img class="info-header__icon" src="img/icons/check-icon.png" alt="">
 					<div class="info-header__text">работаем <span>24 / 7</span></div>
 				</div>
 				<div class="info-header__item info-header__item_region">
-					<img class="info-header__icon" src="img/icons/address-icon.png" alt="" loading="lazy">
+					<img class="info-header__icon" src="img/icons/address-icon.png" alt="">
 					<a href="#city" class="info-header__text _popup-link">Выбрать регион</a>
 				</div>
 			</div>
@@ -42,7 +37,7 @@
 					<a href="tel:+79581117219" class="info-header__text">+7{(958)111-7-219}</a>
 				</div>
 				<div class="info-header__item info-header__item_callback">
-					<img class="info-header__icon" src="img/icons/callback-icon.png" alt="" loading="lazy">
+					<img class="info-header__icon" src="img/icons/callback-icon.png" alt="">
 					<a href="#callback" class="info-header__text _popup-link">Обратный звонок</a>
 				</div>
 			</div>
@@ -65,7 +60,7 @@
 	</div>
 </header>
 			<main class="page">
-
+				<!--preview start-->
 				<section class="preview">
 					<div class="_container">
 						<h1 class="preview__title">Вывод из запоя <br><span>на дому</span> вашем городе</h1>
@@ -77,55 +72,61 @@
 						</ul>
 					</div>
 				</section>
+				<!--preview end-->
 
+				<!--info start-->
 				<section class="info">
 					<div class="_container">
 						<ul class="info__list">
 							<li>
-								<img class="info__icon" src="img/icons/top-icon1.png" alt="" loading="lazy">
+								<img class="info__icon lazy" data-src="img/icons/top-icon1.png" src="" alt="">
 								<p class="info__text">Есть лицензия</p>
 							</li>
 							<li>
-								<img class="info__icon" src="img/icons/top-icon2.png" alt="" loading="lazy">
+								<img class="info__icon lazy" data-src="img/icons/top-icon2.png" src="" alt="">
 								<p class="info__text">Выведем за 1 приезд</p>
 							</li>
 							<li>
-								<img class="info__icon" src="img/icons/top-icon3.png" alt="" loading="lazy">
+								<img class="info__icon lazy" data-src="img/icons/top-icon3.png" src="" alt="">
 								<p class="info__text">Гражданская одежда</p>
 							</li>
 						</ul>
 					</div>
 				</section>
+				<!--info end-->
 
+				<!--page-form start-->
 				<section class="page-form">
 					<div class="_container">
 						<div class="page-form__body">
 							<div class="page-form__image page-form__image_1">
-								<img src="img/page-form/doctor1.webp" alt="" loading="lazy">
+								<img data-src="img/page-form/doctor1.webp" src="" alt="" class="lazy">
 							</div>
 							<div class="page-form__content">
 								<h2 class="page-form__title section__title">Вывод из <br class="page-form__br"> запоя на дому <br> {вашем городе}.<br class="page-form__br"> Звоните!</h2>
 								<div class="page-form__subtitle">
-									<img src="img/icons/check-icon.png" alt="" loading="lazy">
+									<img data-src="img/icons/check-icon.png" src="" alt="" class="lazy">
 									<p>Круглосуточно!<br class="page-form__br"> Доступные цены!</p>
 								</div>
 								<a href="#callback" class="page-form__button btn _popup-link"><span>Вызвать врача на дом</span></a>
 								<div class="page-form__note">Или позвоните<br class="page-form__br"> <span>+7{(958)111-7-219}</span></div>
 							</div>
 							<div class="page-form__image page-form__image_2">
-								<img src="img/page-form/label-anon.webp" alt="" loading="lazy">
+								<img data-src="img/page-form/label-anon.webp" src="" alt="" class="lazy">
 							</div>
 						</div>
 					</div>
 				</section>
+				<!--page-form end-->
 
+				<!--conditions start-->
 				<section class="conditions">
 					<div class="_container">
 						<h2 class="conditions__title section__title">Понимаем ваше состояние, <br>поэтому предлагаем следующее:</h2>
 						<div class="conditions__body">
 							<div class="conditions__item item-conditions">
 								<div class="item-conditions__image">
-									<img src="img/conditions/conditions1.webp" alt="" loading="lazy">
+									<img data-src="img/conditions/conditions1.webp" src="" alt="" class="lazy">
 								</div>
 								<div class="item-conditions__content">
 									<h3 class="item-conditions__title">Будем в течение 1 часа</h3>
@@ -134,7 +135,7 @@
 							</div>
 							<div class="conditions__item item-conditions">
 								<div class="item-conditions__image">
-									<img src="img/conditions/conditions2.webp" alt="" loading="lazy">
+									<img data-src="img/conditions/conditions2.webp" src="" alt="" class="lazy">
 								</div>
 								<div class="item-conditions__content">
 									<h3 class="item-conditions__title">Сделаем всё за 1 визит</h3>
@@ -143,7 +144,7 @@
 							</div>
 							<div class="conditions__item item-conditions">
 								<div class="item-conditions__image">
-									<img src="img/conditions/conditions3.webp" alt="" loading="lazy">
+									<img data-src="img/conditions/conditions3.webp" src="" alt="" class="lazy">
 								</div>
 								<div class="item-conditions__content">
 									<h3 class="item-conditions__title">100% анонимность</h3>
@@ -152,7 +153,7 @@
 							</div>
 							<div class="conditions__item item-conditions">
 								<div class="item-conditions__image">
-									<img src="img/conditions/conditions4.webp" alt="" loading="lazy">
+									<img data-src="img/conditions/conditions4.webp" src="" alt="" class="lazy">
 								</div>
 								<div class="item-conditions__content">
 									<h3 class="item-conditions__title">Пациенту станет легче сразу</h3>
@@ -161,7 +162,7 @@
 							</div>
 							<div class="conditions__item item-conditions">
 								<div class="item-conditions__image">
-									<img src="img/conditions/conditions5.webp" alt="" loading="lazy">
+									<img data-src="img/conditions/conditions5.webp" src="" alt="" class="lazy">
 								</div>
 								<div class="item-conditions__content">
 									<h3 class="item-conditions__title">Предварительная диагностика</h3>
@@ -170,7 +171,7 @@
 							</div>
 							<div class="conditions__item item-conditions">
 								<div class="item-conditions__image">
-									<img src="img/conditions/conditions6.webp" alt="" loading="lazy">
+									<img data-src="img/conditions/conditions6.webp" src="" alt="" class="lazy">
 								</div>
 								<div class="item-conditions__content">
 									<h3 class="item-conditions__title">Индивидуальный состав капельницы</h3>
@@ -179,7 +180,7 @@
 							</div>
 							<div class="conditions__item item-conditions">
 								<div class="item-conditions__image">
-									<img src="img/conditions/conditions7.webp" alt="" loading="lazy">
+									<img data-src="img/conditions/conditions7.webp" src="" alt="" class="lazy">
 								</div>
 								<div class="item-conditions__content">
 									<h3 class="item-conditions__title">Оставляем ампулы и флаконы от лекарств у вас</h3>
@@ -188,7 +189,7 @@
 							</div>
 							<div class="conditions__item item-conditions">
 								<div class="item-conditions__image">
-									<img src="img/conditions/conditions8.webp" alt="" loading="lazy">
+									<img data-src="img/conditions/conditions8.webp" src="" alt="" class="lazy">
 								</div>
 								<div class="item-conditions__content">
 									<h3 class="item-conditions__title">Круглосуточно в режиме 24/7</h3>
@@ -197,7 +198,7 @@
 							</div>
 							<div class="conditions__item item-conditions">
 								<div class="item-conditions__image">
-									<img src="img/conditions/conditions9.webp" alt="" loading="lazy">
+									<img data-src="img/conditions/conditions9.webp" src="" alt="" class="lazy">
 								</div>
 								<div class="item-conditions__content">
 									<h3 class="item-conditions__title">Высокая квалификация специалистов и наличие лицензии</h3>
@@ -206,7 +207,7 @@
 							</div>
 							<div class="conditions__item item-conditions">
 								<div class="item-conditions__image">
-									<img src="img/conditions/conditions10.webp" alt="" loading="lazy">
+									<img data-src="img/conditions/conditions10.webp" src="" alt="" class="lazy">
 								</div>
 								<div class="item-conditions__content">
 									<h3 class="item-conditions__title">Лечение последствий интоксикации</h3>
@@ -220,34 +221,38 @@
 								<p class="bottom-conditions__text">Работаем вашем городе на основе лицензии, дающей право на осуществление медицинской деятельности. Ксерокопию документа вправе потребовать у специалиста.</p>
 							</div>
 							<div class="bottom-conditions__image">
-								<img src="img/conditions/man-license.webp" alt="" loading="lazy">
+								<img data-src="img/conditions/man-license.webp" src="" alt="" class="lazy">
 							</div>
 						</div>
 					</div>
 				</section>
+				<!--conditions end-->
 
+				<!--page-form start-->
 				<section class="page-form">
 					<div class="_container">
 						<div class="page-form__body">
 							<div class="page-form__image page-form__image_1">
-								<img src="img/page-form/doctor2.webp" alt="" loading="lazy">
+								<img data-src="img/page-form/doctor2.webp" src="" alt="" class="lazy">
 							</div>
 							<div class="page-form__content">
 								<h2 class="page-form__title section__title">Вывод из <br class="page-form__br"> запоя на дому <br> {вашем городе}.<br class="page-form__br"> Круглосуточно!</h2>
 								<div class="page-form__subtitle">
-									<img src="img/icons/check-icon.png" alt="" loading="lazy">
+									<img data-src="img/icons/check-icon.png" src="" alt="" class="lazy">
 									<p>Капельница от запоя!<br class="page-form__br"> Доступная цена!</p>
 								</div>
 								<a href="#callback" class="page-form__button btn _popup-link"><span>Вызвать врача на дом</span></a>
 								<div class="page-form__note">Или позвоните<br class="page-form__br"> <span>+7{(958)111-7-219}</span></div>
 							</div>
 							<div class="page-form__image page-form__image_2">
-								<img src="img/page-form/label-anon2.webp" alt="" loading="lazy">
+								<img data-src="img/page-form/label-anon2.webp" src="" alt="" class="lazy">
 							</div>
 						</div>
 					</div>
 				</section>
+				<!--page-form end-->
 
+				<!--price start-->
 				<section class="price">
 					<div class="_container">
 						<h2 class="price__title section__title">Сколько стоят наши услуги {вашем городе}</h2>
@@ -267,99 +272,99 @@
 										<span class="table-price__icon"></span>
 										<span class="table-price__name">Терапевтический осмотр</span>
 									</div>
-									<div class="table-price__column table-price__column_2 active"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_3"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_4"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
+									<div class="table-price__column table-price__column_2 active"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_3"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_4"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
 								</div>
 								<div class="table-price__row">
 									<div class="table-price__column table-price__column_1">
 										<span class="table-price__icon"></span>
 										<span class="table-price__name">ЭКГ</span>
 									</div>
-									<div class="table-price__column table-price__column_2 active"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_3"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_4"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
+									<div class="table-price__column table-price__column_2 active"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_3"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_4"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
 								</div>
 								<div class="table-price__row table-price__row_blue">
 									<div class="table-price__column table-price__column_1">
 										<span class="table-price__icon"></span>
 										<span class="table-price__name">Глюкозометрия</span>
 									</div>
-									<div class="table-price__column table-price__column_2 active"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_3"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_4"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
+									<div class="table-price__column table-price__column_2 active"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_3"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_4"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
 								</div>
 								<div class="table-price__row">
 									<div class="table-price__column table-price__column_1">
 										<span class="table-price__icon"></span>
 										<span class="table-price__name">Пульсоксиметрия</span>
 									</div>
-									<div class="table-price__column table-price__column_2 active"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_3"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_4"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
+									<div class="table-price__column table-price__column_2 active"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_3"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_4"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
 								</div>
 								<div class="table-price__row table-price__row_blue">
 									<div class="table-price__column table-price__column_1">
 										<span class="table-price__icon"></span>
 										<span class="table-price__name">Очищающая капельница 800-1500 мл</span>
 									</div>
-									<div class="table-price__column table-price__column_2 active"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_3"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_4"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
+									<div class="table-price__column table-price__column_2 active"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_3"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_4"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
 								</div>
 								<div class="table-price__row">
 									<div class="table-price__column table-price__column_1">
 										<span class="table-price__icon"></span>
 										<span class="table-price__name">Назначения для быстрого восстановления</span>
 									</div>
-									<div class="table-price__column table-price__column_2 active"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_3"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_4"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
+									<div class="table-price__column table-price__column_2 active"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_3"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_4"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
 								</div>
 								<div class="table-price__row table-price__row_blue">
 									<div class="table-price__column table-price__column_1">
 										<span class="table-price__icon"></span>
 										<span class="table-price__name">Ноотропы</span>
 									</div>
-									<div class="table-price__column table-price__column_2 active"><img src="img/icons/table-minus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_3"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_4"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
+									<div class="table-price__column table-price__column_2 active"><img data-src="img/icons/table-minus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_3"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_4"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
 								</div>
 								<div class="table-price__row">
 									<div class="table-price__column table-price__column_1">
 										<span class="table-price__icon"></span>
 										<span class="table-price__name">Связь с наркологом по телефону</span>
 									</div>
-									<div class="table-price__column table-price__column_2 active"><img src="img/icons/table-minus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_3"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_4"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
+									<div class="table-price__column table-price__column_2 active"><img data-src="img/icons/table-minus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_3"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_4"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
 								</div>
 								<div class="table-price__row table-price__row_blue">
 									<div class="table-price__column table-price__column_1">
 										<span class="table-price__icon"></span>
 										<span class="table-price__name">Гепатопротекторы</span>
 									</div>
-									<div class="table-price__column table-price__column_2 active"><img src="img/icons/table-minus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_3"><img src="img/icons/table-minus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_4"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
+									<div class="table-price__column table-price__column_2 active"><img data-src="img/icons/table-minus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_3"><img data-src="img/icons/table-minus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_4"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
 								</div>
 								<div class="table-price__row">
 									<div class="table-price__column table-price__column_1">
 										<span class="table-price__icon"></span>
 										<span class="table-price__name">Антиоксиданты</span>
 									</div>
-									<div class="table-price__column table-price__column_2 active"><img src="img/icons/table-minus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_3"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_4"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
+									<div class="table-price__column table-price__column_2 active"><img data-src="img/icons/table-minus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_3"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_4"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
 								</div>
 								<div class="table-price__row table-price__row_blue">
 									<div class="table-price__column table-price__column_1">
 										<span class="table-price__icon"></span>
 										<span class="table-price__name">Снотворное</span>
 									</div>
-									<div class="table-price__column table-price__column_2 active"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_3"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
-									<div class="table-price__column table-price__column_4"><img src="img/icons/table-plus.png" alt="" loading="lazy"></div>
+									<div class="table-price__column table-price__column_2 active"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_3"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
+									<div class="table-price__column table-price__column_4"><img data-src="img/icons/table-plus.png" src="" alt="" class="lazy"></div>
 								</div>
 								<div class="table-price__row">
 									<div class="table-price__column table-price__column_1"></div>
@@ -381,7 +386,9 @@
 						</div>
 					</div>
 				</section>
+				<!--price end-->
 
+				<!--feedback start-->
 				<section class="feedback">
 					<div class="_container">
 						<div class="feedback__body">
@@ -392,7 +399,7 @@
 										<h3 class="item-feedback__title">«...пил неделю... »</h3>
 										<p class="item-feedback__text">Обратилась в эту фирму по совету подруги для вывода из запоя вашем городе. Приехал доктор на дом, записал кардиограмму, рассказал (как вести себя в такой ситуации), вывел из запоя и расписал лечение в таблетках. Рекомендации выполнили, чувствуется профессионализм. Удобно, что круглосуточно.</p>
 										<div class="item-feedback__user">
-											<div class="item-feedback__avatar"><img src="img/avatar.webp" alt="" loading="lazy"></div>
+											<div class="item-feedback__avatar"><img data-src="img/avatar.webp" src="" alt="" class="lazy"></div>
 											<div class="item-feedback__user-info">
 												<div class="item-feedback__name">Наталья</div>
 												<div class="item-feedback__date">11 марта 2016</div>
@@ -403,7 +410,7 @@
 										<h3 class="item-feedback__title">«Приятно было смотреть как человек работает и общается с пациентом»</h3>
 										<p class="item-feedback__text">Нужна было недорого вывести из запоя вашем городе. Обратилась в "Семейный доктор" к Григорию Петровичу. Огромное спасибо за предоставленную помощь, высокий профессионализм! При случае буду рада порекомендовать ваши услуги нуждающимся людям. Цена услуг приятно порадовала, недорого, хотя была целая тарелка ампул после выведения!</p>
 										<div class="item-feedback__user">
-											<div class="item-feedback__avatar"><img src="img/avatar.webp" alt="" loading="lazy"></div>
+											<div class="item-feedback__avatar"><img data-src="img/avatar.webp" src="" alt="" class="lazy"></div>
 											<div class="item-feedback__user-info">
 												<div class="item-feedback__name">Наталия Анатольевна</div>
 												<div class="item-feedback__date">26.01.2016</div>
@@ -414,7 +421,7 @@
 										<h3 class="item-feedback__title">«Тут и в вену попали и лечение расписали на листке»</h3>
 										<p class="item-feedback__text">Вначале обратилась к медсестре для вывода из запоя вашем городе, не попала в вену, исколола еще и наорала, что не будет выводить такого алкоголика из запоя, если он не хочет, развернулась и уехала!!!! После обратились к Вам - где отнеслись по-человечески! В вену попали и лечение расписали на листке. Самое удивительное - цена, недорого получилась, так как одного визита достаточно.</p>
 										<div class="item-feedback__user">
-											<div class="item-feedback__avatar"><img src="img/avatar.webp" alt="" loading="lazy"></div>
+											<div class="item-feedback__avatar"><img data-src="img/avatar.webp" src="" alt="" class="lazy"></div>
 											<div class="item-feedback__user-info">
 												<div class="item-feedback__name">Вика</div>
 												<div class="item-feedback__date">18.01.2016</div>
@@ -428,7 +435,9 @@
 						</div>
 					</div>
 				</section>
+				<!--feedback end-->
 
+				<!--steps start-->
 				<section class="steps">
 					<div class="_container">
 						<h2 class="steps__title section__title">7 шагов к выводу из запоя на дому</h2>
@@ -512,12 +521,14 @@
 						</div>
 					</div>
 				</section>
+				<!--steps end-->
 
+				<!--page-form start-->
 				<section class="page-form page-form_discount">
 					<div class="_container">
 						<div class="page-form__body">
 							<div class="page-form__image page-form__image_1">
-								<img src="img/page-form/doctor3.webp" alt="" loading="lazy">
+								<img data-src="img/page-form/doctor3.webp" src="" alt="" class="lazy">
 							</div>
 							<div class="page-form__content">
 								<h2 class="page-form__title section__title"><span>Внимание!</span><br class="page-form__br"> При выводе <br class="page-form__br_desc"> из запоя на дому <span>{вашем городе}</span><br class="page-form__br_desc"> скидка на кодирование!</h2>
@@ -525,40 +536,44 @@
 								<div class="page-form__note">Или позвоните<br class="page-form__br"> <span>+7{(958)111-7-219}</span></div>
 							</div>
 							<div class="page-form__image page-form__image_2">
-								<img src="img/page-form/label-anon3.webp" alt="" loading="lazy">
+								<img data-src="img/page-form/label-anon3.webp" src="" alt="" class="lazy">
 							</div>
 						</div>
 					</div>
 				</section>
+				<!--page-form end-->
 
+				<!--warranty start-->
 				<section class="warranty">
 					<div class="_container">
 						<h2 class="warranty__title_main">Наши гарантии</h2>
 						<div class="warranty__body">
 							<div class="warranty__item item-warranty">
-								<div class="item-warranty__image"><img src="img/warranty/warranty1.webp" alt="" loading="lazy"></div>
+								<div class="item-warranty__image"><img data-src="img/warranty/warranty1.webp" src="" alt="" class="lazy"></div>
 								<p class="item-warranty__text">Гарантируем, никто <br> не узнает, кто мы и зачем <br> приходили.</p>
 							</div>
 							<div class="warranty__item warranty__item_empty"></div>
 							<div class="warranty__item item-warranty">
-								<div class="item-warranty__image"><img src="img/warranty/warranty2.webp" alt="" loading="lazy"></div>
+								<div class="item-warranty__image"><img data-src="img/warranty/warranty2.webp" src="" alt="" class="lazy"></div>
 								<p class="item-warranty__text">Проведем предварительную <br> диагностику, чтобы исключить <br> нежелательную реакцию.</p>
 							</div>
 							<div class="warranty__item item-warranty">
-								<div class="item-warranty__image"><img src="img/warranty/warranty3.webp" alt="" loading="lazy"></div>
+								<div class="item-warranty__image"><img data-src="img/warranty/warranty3.webp" src="" alt="" class="lazy"></div>
 								<p class="item-warranty__text">Внимание! Гарантируем <br> результат ТОЛЬКО в случае <br> следования нашим <br> рекомендациям.</p>
 							</div>
 							<div class="warranty__item warranty__item_title">
 								<h2 class="warranty__title">Наши гарантии</h2>
 							</div>
 							<div class="warranty__item item-warranty">
-								<div class="item-warranty__image"><img src="img/warranty/warranty4.webp" alt="" loading="lazy"></div>
+								<div class="item-warranty__image"><img data-src="img/warranty/warranty4.webp" src="" alt="" class="lazy"></div>
 								<p class="item-warranty__text">Гарантируем использование <br> качественных <br> препаратов.</p>
 							</div>
 						</div>
 					</div>
 				</section>
+				<!--warranty end-->
 
+				<!--faq start-->
 				<section class="faq">
 					<div class="_container">
 						<h2 class="faq__title section__title">Ответы на вопросы, которые волнуют наших пациентов</h2>
@@ -606,21 +621,22 @@
 						</div>
 					</div>
 				</section>
+				<!--faq end-->
 			</main>
 			<footer class="header header_footer">
 	<div class="header__content _container">
 		<a href="/" class="header__logo">
-			<img src="img/logo.webp" alt="" loading="lazy">
+			<img data-src="img/logo.webp" src="" alt="" class="lazy">
 		</a>
 		<div class="header__slogan">Медицинская помощь <span>на дому<br> и в клинике</span> {вашем городе}</div>
 		<div class="header__info info-header">
 			<div class="info-header__column info-header__column_1">
 				<div class="info-header__item info-header__item_shedule">
-					<img class="info-header__icon" src="img/icons/check-icon.png" alt="" loading="lazy">
+					<img class="info-header__icon lazy" data-src="img/icons/check-icon.png" src="" alt="">
 					<div class="info-header__text">работаем <span>24 / 7</span></div>
 				</div>
 				<div class="info-header__item info-header__item_region">
-					<img class="info-header__icon" src="img/icons/mail-icon.png" alt="" loading="lazy">
+					<img class="info-header__icon lazy" data-src="img/icons/mail-icon.png" src="" alt="">
 					<a href="mailto:medusluga@gmail.com" class="info-header__text">medusluga@gmail.com</a>
 				</div>
 			</div>
@@ -629,7 +645,7 @@
 					<a href="tel:+79581117219" class="info-header__text">+7{(958)111-7-219}</a>
 				</div>
 				<div class="info-header__item info-header__item_callback">
-					<img class="info-header__icon" src="img/icons/callback-icon.png" alt="" loading="lazy">
+					<img class="info-header__icon lazy" data-src="img/icons/callback-icon.png" src="" alt="">
 					<a href="#callback" class="info-header__text _popup-link">Обратный звонок</a>
 				</div>
 			</div>
@@ -743,7 +759,7 @@
 		</div>
 	</div>
 </div>
-		<script defer src="js/vendors.min.js"></script>
-<script defer src="js/app.min.js"></script>
+		<script async src="js/vendors.min.js"></script>
+<script async src="js/app.min.js"></script>
 	</body>
 </html>
