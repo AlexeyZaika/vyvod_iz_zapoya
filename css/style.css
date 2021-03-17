@@ -341,12 +341,33 @@ textarea {
 
 .popup__close {
   position: absolute;
-  right: 18px;
-  top: 21px;
-  width: 17px;
-  height: 17px;
+  right: 14px;
+  top: 17px;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
-  background: url("../img/icons/modal-close.png") center/100% no-repeat;
+}
+
+.popup__close::after,
+.popup__close::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 1px);
+  width: 100%;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.popup__close::after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.popup__close::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .popup__title {
@@ -485,7 +506,7 @@ textarea.form-popup__input {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 300px;
           flex: 0 0 300px;
-  margin: 0 0 0 70px;
+  margin: 0 0 0 50px;
   font-size: 20px;
   font-weight: 700;
   line-height: normal;
@@ -500,11 +521,7 @@ textarea.form-popup__input {
 }
 
 .header_footer .header__content {
-  height: 160px;
-}
-
-.header_footer .header__content::after {
-  width: 142px;
+  height: 140px;
 }
 
 .header_footer .info-header_region .info-header__text {
@@ -527,7 +544,7 @@ textarea.form-popup__input {
 }
 
 .info-header__column {
-  padding-left: 70px;
+  padding-left: 5%;
 }
 
 .info-header__item {
@@ -930,23 +947,29 @@ textarea.form-popup__input {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
           flex: 0 0 25%;
-}
-
-.page-form__image_1 {
-  margin-top: -42px;
   padding: 0 10px;
-}
-
-.page-form__image_2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.page-form__image_1 {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.page-form__image_1 img {
+  width: 100%;
+}
+
+.page-form__image_2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .page-form__image img {
@@ -1027,7 +1050,8 @@ textarea.form-popup__input {
 
 .page-form_discount .page-form__image_1 img {
   max-width: none;
-  width: 135%;
+  margin-left: 50px;
+  width: 125%;
 }
 
 .page-form_discount .page-form__title {
@@ -1505,6 +1529,7 @@ textarea.form-popup__input {
   display: flex;
   margin: 0 -15px;
   background: url("../img/steps.webp") top 145px center no-repeat;
+  background-size: 877px 409px;
 }
 
 .steps__body_mobile {
@@ -1816,6 +1841,54 @@ textarea.form-popup__input {
 @media (max-width: 1210px) {
   ._container {
     max-width: 970px;
+  }
+
+  .feedback__body {
+    width: 60%;
+  }
+
+  .steps__body {
+    background-position: top 115px center;
+    background-size: 700px 326px;
+  }
+
+  .steps__item_small {
+    padding-top: 80px;
+    width: 80%;
+  }
+
+  .steps__item_big {
+    padding-top: 30px;
+  }
+
+  .steps__item_1 {
+    padding-top: 120px;
+  }
+
+  .item-steps__title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .item-steps__text {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+
+  .warranty__title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  ._container {
+    max-width: 750px;
   }
 
   .header__content {
@@ -2252,25 +2325,9 @@ textarea.form-popup__input {
     margin-bottom: 35px;
   }
 
-  .item-steps__title {
-    margin-bottom: 15px;
-    font-size: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
   .item-steps__text span {
     font-size: 18px;
     font-weight: 400;
-  }
-
-  .item-steps__text {
-    margin-bottom: 15px;
-    font-size: 14px;
   }
 
   .warranty {
@@ -2307,12 +2364,6 @@ textarea.form-popup__input {
 
   .spollers__body {
     padding: 0 35px 10px 30px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  ._container {
-    max-width: 750px;
   }
 }
 
@@ -2353,7 +2404,8 @@ textarea.form-popup__input {
   }
 
   .preview {
-    padding: 30px 0 20px;
+    height: 430px;
+    padding: 20px 0 20px;
   }
 
   .preview__title br {
