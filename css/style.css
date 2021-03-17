@@ -2410,6 +2410,7 @@ textarea.form-popup__input {
   .preview {
     width: 100%;
     height: 400px;
+    background: url("../img/top-screen-mobile-small.webp") center/cover no-repeat;
     padding: 15px 0 15px;
   }
 
