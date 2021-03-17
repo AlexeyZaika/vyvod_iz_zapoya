@@ -2402,7 +2402,7 @@ textarea.form-popup__input {
   .preview {
     height: 430px;
     padding: 20px 0 20px;
-    background-size: auto 430px;
+    background: url("../img/top-screen-mobile-small.webp") center/cover no-repeat;
   }
 
   .preview__title br {
