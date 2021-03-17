@@ -543,6 +543,15 @@ textarea.form-popup__input {
   padding: 6px 0;
 }
 
+.info-header__item_shedule .info-header__icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 22px;
+          flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+  background-position: -1px -203px;
+}
+
 .info-header__item_region .info-header__text {
   color: #337ab7;
   border-bottom: 1px dashed #329cff;
@@ -556,7 +565,12 @@ textarea.form-popup__input {
 }
 
 .info-header__item_region .info-header__icon {
-  height: 22px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 22px;
+          flex: 0 0 22px;
+  width: 22px;
+  height: 26px;
+  background-position: -1px -176px;
 }
 
 .info-header__item_phone {
@@ -619,15 +633,24 @@ textarea.form-popup__input {
 }
 
 .info-header__item_callback .info-header__icon {
-  height: 22px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 23px;
+          flex: 0 0 23px;
+  width: 23px;
+  height: 23px;
+  background-position: -1px -152px;
+}
+
+.info-header__item_mail .info-header__icon {
+  background-position: -1px -226px;
+  width: 22px;
+  height: 18px;
 }
 
 .info-header__icon {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 22px;
-          flex: 0 0 22px;
-  width: 22px;
   margin-right: 10px;
+  background: url("../img/icons/sprite-icon.png") no-repeat;
+  overflow: hidden;
 }
 
 .info-header__text {
@@ -832,6 +855,22 @@ textarea.form-popup__input {
       -ms-flex: 0 0 30px;
           flex: 0 0 30px;
   width: 30px;
+  height: 30px;
+  background: url("../img/icons/sprite-icon.png") no-repeat;
+  overflow: hidden;
+}
+
+.info__icon_1 {
+  background-position: -1px -115px;
+  height: 36px;
+}
+
+.info__icon_2 {
+  background-position: -1px -53px;
+}
+
+.info__icon_3 {
+  background-position: -1px -84px;
 }
 
 .info__text {
@@ -948,10 +987,13 @@ textarea.form-popup__input {
   margin-bottom: 15px;
 }
 
-.page-form__subtitle img {
+.page-form__subtitle_icon {
   margin-right: 10px;
   width: 22px;
   height: 22px;
+  background: url("../img/icons/sprite-icon.png") no-repeat;
+  overflow: hidden;
+  background-position: -1px -203px;
 }
 
 .page-form__subtitle p {
@@ -1192,7 +1234,22 @@ textarea.form-popup__input {
   display: block;
 }
 
-.table-price__column img {
+.table-price__plus {
+  display: inline-block;
+  background: url("../img/icons/sprite-icon.png") no-repeat;
+  overflow: hidden;
+  background-position: -1px -273px;
+  width: 21px;
+  height: 21px;
+}
+
+.table-price__minus {
+  display: inline-block;
+  background: url("../img/icons/sprite-icon.png") no-repeat;
+  overflow: hidden;
+  background-position: -1px -267px;
+  width: 21px;
+  height: 5px;
   vertical-align: middle;
 }
 
@@ -1219,7 +1276,8 @@ textarea.form-popup__input {
   width: 19px;
   height: 19px;
   vertical-align: middle;
-  background: url("../img/icons/info-icon.png") top no-repeat;
+  background: url("../img/icons/sprite-icon.png") no-repeat;
+  background-position: -1px -295px;
 }
 
 .table-price__icon::after {
@@ -1229,7 +1287,8 @@ textarea.form-popup__input {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/icons/info-icon.png") bottom no-repeat;
+  background: url("../img/icons/sprite-icon.png") bottom no-repeat;
+  background-position: -1px -314px;
   opacity: 0;
   -webkit-transition: opacity ease 0.5s;
   -o-transition: opacity ease 0.5s;
@@ -1261,14 +1320,13 @@ textarea.form-popup__input {
   width: 34px;
   height: 26px;
   vertical-align: middle;
-  background-image: url("../img/icons/table-arrows.png");
+  background: url("../img/icons/sprite-icon.png") no-repeat;
+  background-position: -1px -0px;
   cursor: pointer;
 }
 
 .table-price__arrow_prev {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  background-position: -1px -26px;
 }
 
 .table-price__arrow.disable {
@@ -1363,7 +1421,8 @@ textarea.form-popup__input {
   height: 21px;
   top: calc(50% - 10.5px);
   left: -25px;
-  background: url("../img/icons/reload.png") center/100% no-repeat;
+  background: url("../img/icons/sprite-icon.png") no-repeat;
+  background-position: -1px -245px;
   -webkit-transition: all ease 0.5s;
   -o-transition: all ease 0.5s;
   transition: all ease 0.5s;
@@ -1979,7 +2038,7 @@ textarea.form-popup__input {
     padding: 20px;
   }
 
-  .page-form__subtitle img {
+  .page-form__subtitle_icon {
     display: none;
   }
 
