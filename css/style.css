@@ -555,6 +555,10 @@ textarea.form-popup__input {
   color: #23527c;
 }
 
+.info-header__item_region .info-header__icon {
+  height: 22px;
+}
+
 .info-header__item_phone {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -612,6 +616,10 @@ textarea.form-popup__input {
 
 .info-header__item_callback .info-header__text:hover {
   color: #23527c;
+}
+
+.info-header__item_callback .info-header__icon {
+  height: 22px;
 }
 
 .info-header__icon {
