@@ -1910,6 +1910,7 @@ textarea.form-popup__input {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 53px;
             flex: 0 0 53px;
+    height: 57px;
   }
 
   .header__slogan br {
@@ -1922,6 +1923,7 @@ textarea.form-popup__input {
             flex: 0 0 190px;
     margin: 0 0 0 10px;
     font-size: 16px;
+    height: 57px;
   }
 
   .header_footer .header__content {
@@ -1961,6 +1963,7 @@ textarea.form-popup__input {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 15px;
+    height: 35px;
   }
 
   .info-header__column_2 {
@@ -1975,6 +1978,7 @@ textarea.form-popup__input {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 10px;
+    height: 69px;
   }
 
   .info-header__item_shedule .info-header__icon {
