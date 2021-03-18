@@ -450,7 +450,7 @@ body._lock {
 
 .preview {
   padding: 15px 0 15px;
-  height: 400px;
+  height: 410px;
   background: url("../img/top-screen-mobile-small.webp") center/cover no-repeat;
 }
 
@@ -461,9 +461,10 @@ body._lock {
   line-height: normal;
   font-weight: 700;
   color: #329cff;
+  min-height: 120px;
 }
 
-.preview__title span {
+.preview__title_red {
   padding: 0 5px;
   color: #fff;
   background: #ed1c24;
@@ -474,9 +475,10 @@ body._lock {
   padding: 0;
   font-size: 32px;
   color: #fff;
+  min-height: 90px;
 }
 
-.preview__list li {
+.preview__listelem {
   position: relative;
   margin-right: 30px;
   padding: 10px 0 10px 35px;
@@ -484,7 +486,7 @@ body._lock {
   color: #fff;
 }
 
-.preview__list li::after {
+.preview__listelem::after {
   content: '';
   position: absolute;
   width: 32px;
@@ -2036,7 +2038,7 @@ textarea.form-popup__input {
     padding-left: 20px;
   }
 
-  .preview__list li {
+  .preview__listelem {
     font-size: 22px;
   }
 }
