@@ -449,12 +449,28 @@ body._lock {
 }
 
 .preview {
+  position: relative;
   padding: 15px 0 15px;
   height: 410px;
-  background: url("../img/top-screen-mobile-small.webp") center/cover no-repeat;
+  background-color: #333;
+}
+
+.preview__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .preview__title {
+  position: relative;
+  z-index: 2;
   margin: 0 0 20px;
   padding: 0;
   font-size: 33px;
@@ -471,6 +487,8 @@ body._lock {
 }
 
 .preview__text {
+  position: relative;
+  z-index: 2;
   margin: 0 0 20px;
   padding: 0;
   font-size: 32px;
@@ -1846,17 +1864,13 @@ textarea.form-popup__input {
 
 @media (min-width: 479.98px) {
   .preview {
-    padding: 80px 0 20px;
+    padding: 20px 0 20px;
     height: 370px;
     background: url("../img/top-screen-mobile.webp") center/cover no-repeat;
   }
 
-  .preview__title {
-    margin: 0 0 30px;
-  }
-
-  .preview__text {
-    margin: 0 0 30px;
+  .preview__bg {
+    display: none;
   }
 
   .preview__list {
