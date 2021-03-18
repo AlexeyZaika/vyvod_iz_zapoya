@@ -478,12 +478,11 @@ body._lock {
   font-weight: 700;
   color: #329cff;
   min-height: 120px;
-}
-
-.preview__title_red {
-  padding: 0 5px;
-  color: #fff;
-  background: #ed1c24;
+  /*&_red {
+			padding: 0 5px;
+			color: #fff;
+			background: #ed1c24;
+		}*/
 }
 
 .preview__text {
