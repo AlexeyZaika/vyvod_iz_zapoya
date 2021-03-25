@@ -441,10 +441,18 @@ let popupCity = document.querySelector('.popup_city');
 
 for (let i = 0; i < popupCityCloses.length; i++) {
 	let popupCityClose = popupCityCloses[i];
+	let inputSearch = document.querySelector('#city_choice_field');
 
 	popupCityClose.addEventListener('click', function(e) {
 		if (popupCity.classList.contains('_active')) {
 			e.stopPropagation();
+			inputSearch.value = '';
+			for (let j = 0; j < popupCityCloses.length; j++) {
+				let popupLink = popupCityCloses[j];
+				if (popupLink.classList.contains('hide')) {
+					popupLink.classList.remove('hide');
+				}
+			}
 			popup_close();
 		}
 	});
