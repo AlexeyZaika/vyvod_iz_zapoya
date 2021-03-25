@@ -435,7 +435,7 @@ function scroll_scroll() {
 setTimeout(function () {
 	scroll_scroll();
 }, 800);
-
+//popu-city-close
 let popupCityCloses = document.querySelectorAll('.popup__link');
 let popupCity = document.querySelector('.popup_city');
 
@@ -445,11 +445,11 @@ for (let i = 0; i < popupCityCloses.length; i++) {
 	popupCityClose.addEventListener('click', function(e) {
 		if (popupCity.classList.contains('_active')) {
 			e.stopPropagation();
-			popupCity.classList.remove('_active');
+			popup_close();
 		}
 	});
 }
-
+//lazy-load
 const images = document.querySelectorAll('.lazy');
 
 const options = {
@@ -475,3 +475,40 @@ const observer = new IntersectionObserver(handleImg, options);
 images.forEach(img => {
     observer.observe(img);
 })
+
+//AJAX
+const apiURL = "json/db.json";
+const cityLinks = document.querySelectorAll(".popup__link");
+
+fetch(apiURL)
+  .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    for (let i = 0; i < cityLinks.length; i++) {
+      let cityLink = cityLinks[i];
+      let nameCity = cityLink.textContent;
+
+      cityLink.addEventListener("click", function () {
+				let name = data.city[nameCity].name;
+				let phone = data.city[nameCity].phone;
+				let cityNames = document.querySelectorAll('.cityName');
+				let cityPhones = document.querySelectorAll('.phoneCity');
+				let phoneLink = phone.split('').filter(elem => elem == '+' || elem >= 0).join('');
+
+				for (let i = 0; i < cityNames.length; i++) {
+					let cityName = cityNames[i];
+
+					cityName.innerHTML = name;
+				}
+
+				for (let i = 0; i < cityPhones.length; i++) {
+					let cityPhone = cityPhones[i];
+
+					cityPhone.innerHTML = phone;
+					cityPhone.setAttribute('href', `tel:${phoneLink}`);
+				}
+      })
+    }
+  });
+

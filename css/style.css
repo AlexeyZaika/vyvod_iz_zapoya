@@ -161,7 +161,7 @@ body._lock {
   line-height: 1.2;
 }
 
-.header__slogan span {
+.header__slogan b {
   color: #ed1c24;
 }
 
@@ -780,24 +780,36 @@ textarea {
   color: #3c3c3c;
 }
 
-.popup__list li {
-  padding-bottom: 5px;
+.popup__list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .popup__link {
+  display: inline-block;
+  padding-bottom: 8px;
   position: relative;
   font-size: 17px;
   color: #337ab7;
   -webkit-transition: color ease 0.5s;
   -o-transition: color ease 0.5s;
   transition: color ease 0.5s;
+  cursor: pointer;
 }
 
 .popup__link::after {
   content: '';
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: 8px;
   width: 0;
   height: 1px;
   background-color: #337ab7;
@@ -1048,9 +1060,17 @@ textarea.form-popup__input {
   text-align: center;
 }
 
-.page-form__note span {
+.page-form__note a {
   font-size: 24px;
   font-weight: 700;
+  color: #333;
+  -webkit-transition: color ease 0.5s;
+  -o-transition: color ease 0.5s;
+  transition: color ease 0.5s;
+}
+
+.page-form__note a:hover {
+  color: #23527c;
 }
 
 .page-form__br {
@@ -1069,7 +1089,7 @@ textarea.form-popup__input {
   color: #333333;
 }
 
-.page-form_discount .page-form__title span {
+.page-form_discount .page-form__title b {
   font-weight: 700;
   color: #db1b22;
 }
@@ -1613,6 +1633,18 @@ textarea.form-popup__input {
 
 .item-steps__text span {
   font-weight: 700;
+}
+
+.item-steps__text a {
+  font-weight: 700;
+  color: #333;
+  -webkit-transition: color ease 0.5s;
+  -o-transition: color ease 0.5s;
+  transition: color ease 0.5s;
+}
+
+.item-steps__text a:hover {
+  color: #23527c;
 }
 
 .warranty {
@@ -2351,6 +2383,11 @@ textarea.form-popup__input {
   }
 
   .item-steps__text span {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .item-steps__text a {
     font-size: 18px;
     font-weight: 400;
   }
