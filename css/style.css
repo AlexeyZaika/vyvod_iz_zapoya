@@ -828,6 +828,10 @@ textarea {
   background-color: #23527c;
 }
 
+.popup__link.hide {
+  display: none;
+}
+
 .form-popup {
   padding: 25px 30px 30px 30px;
 }

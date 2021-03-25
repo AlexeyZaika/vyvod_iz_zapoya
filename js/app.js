@@ -512,3 +512,22 @@ fetch(apiURL)
     }
   });
 
+//Search
+document.querySelector('#city_choice_field').oninput = function () {
+	let val = this.value.toLowerCase().trim();
+	let list = document.querySelectorAll('.popup__list li');
+
+	if (val != '') {
+		list.forEach(function(elem) {
+			if (elem.innerText.toLowerCase().search(val) == -1) {
+				elem.classList.add('hide');
+			} else {
+				elem.classList.remove('hide');
+			}
+		});
+	} else {
+		list.forEach(function(elem) {
+			elem.classList.remove('hide');
+		});
+	}
+}
