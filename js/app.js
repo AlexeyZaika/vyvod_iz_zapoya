@@ -482,7 +482,7 @@ const observer = new IntersectionObserver(handleImg, options);
 
 images.forEach(img => {
     observer.observe(img);
-})
+});
 
 //AJAX
 const apiURL = "json/db.json";
@@ -519,7 +519,7 @@ fetch(apiURL)
       })
     }
   });
-
+/*
 //Search
 document.querySelector('#city_choice_field').oninput = function () {
 	let val = this.value.toLowerCase().trim();
@@ -539,3 +539,20 @@ document.querySelector('#city_choice_field').oninput = function () {
 		});
 	}
 }
+*/
+
+//https://www.med24.online/ajax/get_city.php?q=%D0%BF%D1%8B%D1%88
+
+const dbURL = 'https://www.med24.online/ajax/get_city.php';
+
+function pageLoaded() {
+	fetch(dbURL)
+  .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    console.log(data);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', pageLoaded);
