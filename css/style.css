@@ -828,10 +828,6 @@ textarea {
   background-color: #23527c;
 }
 
-.popup__link.hide {
-  display: none;
-}
-
 .form-popup {
   padding: 25px 30px 30px 30px;
 }
@@ -844,6 +840,8 @@ textarea {
 }
 
 .form-popup__input {
+  position: relative;
+  z-index: 5;
   margin-bottom: 10px;
   padding: 0 18px;
   width: 100%;
@@ -854,6 +852,75 @@ textarea {
   border-radius: 3px;
   -webkit-box-shadow: 0 2px 6px 0 rgba(0, 106, 172, 0.24) inset;
           box-shadow: 0 2px 6px 0 rgba(0, 106, 172, 0.24) inset;
+}
+
+.form-popup__block {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: 4;
+  top: 115px;
+  left: 30px;
+  width: calc(100% - 60px);
+  padding: 15px 18px 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #fff;
+  border: 1px solid #cce4fa;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 6px 0 rgba(0, 106, 172, 0.24) inset;
+          box-shadow: 0 2px 6px 0 rgba(0, 106, 172, 0.24) inset;
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.form-popup__block._active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.form-popup__block a {
+  display: inline-block;
+  padding-bottom: 8px;
+  position: relative;
+  font-size: 17px;
+  color: #337ab7;
+  -webkit-transition: color ease 0.5s;
+  -o-transition: color ease 0.5s;
+  transition: color ease 0.5s;
+  cursor: pointer;
+}
+
+.form-popup__block a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  width: 0;
+  height: 1px;
+  background-color: #337ab7;
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.form-popup__block a:hover {
+  color: #23527c;
+}
+
+.form-popup__block a:hover::after {
+  left: 0;
+  width: 100%;
+  background-color: #23527c;
 }
 
 textarea.form-popup__input {
