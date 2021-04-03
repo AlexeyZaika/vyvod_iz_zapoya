@@ -1,4 +1,3 @@
-
 let forms = document.querySelectorAll('form');
 if (forms.length > 0) {
 	for (let index = 0; index < forms.length; index++) {
