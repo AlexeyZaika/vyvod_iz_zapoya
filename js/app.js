@@ -687,7 +687,8 @@ function pageLoaded() {
 			mode: 'cors',
 		}
 
-		fetch(request, options)
+		if (input.value != '') {
+			fetch(request, options)
 			.then(response => {
 				return response.json();
 			})
@@ -695,6 +696,7 @@ function pageLoaded() {
 				console.log(data);
 				writeListCity(buildListCity(data));
 			})
+		}
   }
 
 	function buildListCity(data) {
