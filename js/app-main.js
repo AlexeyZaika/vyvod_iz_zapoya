@@ -168,9 +168,6 @@ function inputs_init(inputs) {
 					if (input.classList.contains('_mask')) {
 						input_clear_mask(input, input_g_value);
 					}
-					if (input.getAttribute('data-type') === "pass") {
-						input.setAttribute('type', 'text');
-					}
 				}
 			});
 		}
