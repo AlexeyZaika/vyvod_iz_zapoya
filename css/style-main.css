@@ -1150,6 +1150,8 @@ textarea.form-popup__input {
 }
 
 .article__title-list {
+  position: relative;
+  z-index: -1;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -1905,6 +1907,8 @@ textarea.form-popup__input {
 }
 
 .item-about__title {
+  position: relative;
+  z-index: -1;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -2403,10 +2407,6 @@ textarea.form-popup__input {
 
   .article-main__title span img {
     top: 29px;
-  }
-
-  .article__title-list:hover {
-    text-decoration: underline;
   }
 
   .article__link:hover {
