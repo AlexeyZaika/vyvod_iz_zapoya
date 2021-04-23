@@ -2612,7 +2612,7 @@ function lazyImage() {
 
 	function lazyScrollCheck() {
 		let imgIndex = lazyImagesPositions.findIndex(
-			item => pageYOffset > item - windowHeight
+			item => pageYOffset + 50 > item - windowHeight
 		);
 		if (imgIndex >= 0) {
 			if (lazyImages[imgIndex].dataset.src) {

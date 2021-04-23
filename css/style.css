@@ -449,8 +449,8 @@ body._lock {
   background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#d51b22));
   background: -o-linear-gradient(top, #ed1c24, #d51b22);
   background: linear-gradient(to bottom, #ed1c24, #d51b22);
-  -webkit-box-shadow: 0 10px 18px 0 rgba(237, 28, 36, 0.24);
-          box-shadow: 0 10px 18px 0 rgba(237, 28, 36, 0.24);
+  -webkit-box-shadow: 0 10px 8px 0 rgba(237, 28, 36, 0.24);
+          box-shadow: 0 10px 8px 0 rgba(237, 28, 36, 0.24);
   border-bottom: 2px solid #a9191e;
   border-radius: 3px;
 }
