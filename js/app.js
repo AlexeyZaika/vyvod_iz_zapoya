@@ -1953,38 +1953,6 @@ async function form_submit(e) {
 	let form = btn.closest('form');
 	let error = form_validate(form);
 	if (error == 0) {
-		let formAction = form.getAttribute('action') ? form.getAttribute('action').trim() : '#';
-		let formMethod = form.getAttribute('method') ? form.getAttribute('method').trim() : 'GET';
-		const ajax = form.getAttribute('data-ajax');
-		const test = form.getAttribute('data-test');
-
-		//SendForm
-		if (ajax) {
-			e.preventDefault();
-			let formData = new FormData(form);
-			form.classList.add('_sending');
-			let response = await fetch(formAction, {
-				method: formMethod,
-				body: formData
-			});
-			if (response.ok) {
-				let result = await response.json();
-				form.classList.remove('_sending');
-				if (message) {
-					alert("Данные отправлены");
-				}
-				form_clean(form);
-			} else {
-				alert("Ошибка");
-				form.classList.remove('_sending');
-			}
-		}
-		// If test
-		if (test) {
-			e.preventDefault();
-			alert("Данные отправлены");
-			form_clean(form);
-		}
 	} else {
 		let form_error = form.querySelectorAll('._error');
 		if (form_error && form.classList.contains('_goto-error')) {
@@ -2136,15 +2104,7 @@ function input_clear_mask(input, input_g_value) {
 	input_focus_remove(input);
 }
 
-//ActionsOnHash
-if (location.hash) {
-	const hsh = location.hash.replace('#', '');
-	if (document.querySelector('.popup_' + hsh)) {
-		//popup_open(hsh);
-	} else if (document.querySelector('div.' + hsh)) {
-		_goto(document.querySelector('.' + hsh), 500, '');
-	}
-}
+
 //IsHidden
 function _is_hidden(el) {
 	return (el.offsetParent === null)

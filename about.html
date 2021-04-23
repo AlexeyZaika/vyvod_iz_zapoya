@@ -7,8 +7,8 @@
 	<meta name="keywords" content="выведение, запой, на дому, Med24.online, выезд, круглосуточно, недорого, анонимно, нарколог">
 	<meta name="description" content="Вывод из запоя на дому в вашем городе. Капельница. Гарантируем анонимность и результат. Делаем предварительную диагностику: ЭКГ, глюкозу и др.">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=PT+Sans:wght@400;700&display=swap&subset=cyrillic-ext">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=PT+Sans:wght@400;700&display=swap&subset=cyrillic-ext" media="print" onload="this.media='all'">
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" media="print" onload="this.media='all'">
 	<link rel="stylesheet" href="css/style-main.min.css">
 	<link rel="shortcut icon" href="img/favicon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,7 +70,8 @@
             <ul class="breadcrumbs__list">
               <li><a href="main.html" class="breadcrumbs__item">Главная</a></li>
               <li><a href="services.html" class="breadcrumbs__item">Сервис</a></li>
-              <li><a href="about.html" class="breadcrumbs__item breadcrumbs__item_active">О нашей компании</a></li>
+              <li><a href="articles.html" class="breadcrumbs__item">О портале</a></li>
+              <li><a href="about.html" class="breadcrumbs__item breadcrumbs__item_active">Политика конфиденциальности</a></li>
             </ul>
           </div>
         </div>
@@ -79,74 +80,143 @@
         <section class="about">
           <div class="_container">
             <div class="about__body">
-              <div class="about__column about__column_left _spollers _one">
-                <div class="about__item item-about">
-                  <h2 class="_spoller"><span class="item-about__title">О платформе med24.online</span><span class="item-about__icon"></span></h2>
-                  <ul class="item-about__list">
-                    <li><a href="#" class="item-about__link">Задачи и цели</a></li>
-                    <li><a href="#" class="item-about__link">Целевая аудитория</a></li>
-                    <li><a href="#" class="item-about__link">Финансирование</a></li>
-                    <li><a href="#" class="item-about__link">Политика в отношении рекламы</a></li>
-                    <li><a href="#" class="item-about__link">Политика публикации материалов</a></li>
-                    <li><a href="#" class="item-about__link">Политика в области авторских и смежных прав</a></li>
-                    <li><a href="#" class="item-about__link">Выписка из реестра зарегистрированных СМИ</a></li>
-                    <li><a href="#" class="item-about__link">Политика публикации информации о лекарствах</a></li>
-                  </ul>
-                </div>
-                <div class="about__item item-about">
-                  <h2 class="_spoller"><span class="item-about__title">Связаться с med24.online</span><span class="item-about__icon"></span></h2>
-                  <ul class="item-about__list">
-                    <li><a href="#" class="item-about__link">Контакты руководства</a></li>
-                    <li><a href="#" class="item-about__link">Контакты главного редактора</a></li>
-                    <li><a href="#" class="item-about__link">Отдел по управлению персоналом</a></li>
-                    <li><a href="#" class="item-about__link">Отдел по работе с корпоративными клиентами и предложениями по рекламе</a></li>
-                  </ul>
-                </div>
-                <div class="about__item item-about">
-                  <h2 class="_spoller"><span class="item-about__title">IT-безопасность</span><span class="item-about__icon"></span></h2>
-                  <ul class="item-about__list">
-                    <li><a href="#" class="item-about__link">Политика конфиденциальности</a></li>
-                    <li><a href="#" class="item-about__link">Пользовательское соглашение</a></li>
-                    <li><a href="#" class="item-about__link">Политика в отношении файлов Cookie</a></li>
-                  </ul>
-                </div>
-                <div class="about__item item-about">
-                  <h2 class="_spoller"><span class="item-about__title">О компании Семейный Доктор</span><span class="item-about__icon"></span></h2>
-                  <ul class="item-about__list">
-                    <li><a href="#" class="item-about__link">Главный офис</a></li>
-                    <li><a href="#" class="item-about__link">О нашей компании</a></li>
-                    <li><a href="#" class="item-about__link">Реквизиты</a></li>
-                    <li><a href="#" class="item-about__link">Лицензии на медицинскую деятельность</a></li>
-                    <li><a href="#" class="item-about__link">Платежные реквизиты</a></li>
-                    <li><a href="#" class="item-about__link">Медицинский персонал</a></li>
-                    <li><a href="#" class="item-about__link">Вакансии компании</a></li>
-                    <li><a href="#" class="item-about__link">Партнерство и сотрудничество</a></li>
-                  </ul>
-                </div>
+              <div class="about__column about__column_left">
+                <nav class="about__menu _spollers _one">
+                  <div class="about__item item-about">
+                    <h2 class="_spoller"><span class="item-about__title">О платформе med24.online</span><span class="item-about__icon"></span></h2>
+                    <ul class="item-about__list" data-index="1">
+                      <li><a href="#" class="item-about__link">Задачи и цели</a></li>
+                      <li><a href="#" class="item-about__link">Целевая аудитория</a></li>
+                      <li><a href="#" class="item-about__link">Финансирование</a></li>
+                      <li><a href="#" class="item-about__link">Политика в отношении рекламы</a></li>
+                      <li><a href="#" class="item-about__link">Политика публикации материалов</a></li>
+                      <li><a href="#" class="item-about__link">Политика в области авторских и смежных прав</a></li>
+                      <li><a href="#" class="item-about__link">Выписка из реестра зарегистрированных СМИ</a></li>
+                      <li><a href="#" class="item-about__link">Политика публикации информации о лекарствах</a></li>
+                    </ul>
+                  </div>
+                  <div class="about__item item-about">
+                    <h2 class="_spoller"><span class="item-about__title">Связаться с med24.online</span><span class="item-about__icon"></span></h2>
+                    <ul class="item-about__list" data-index="2">
+                      <li><a href="#" class="item-about__link">Контакты руководства</a></li>
+                      <li><a href="#" class="item-about__link">Контакты главного редактора</a></li>
+                      <li><a href="#" class="item-about__link">Отдел по управлению персоналом</a></li>
+                      <li><a href="#" class="item-about__link">Отдел по работе с корпоративными клиентами и предложениями по рекламе</a></li>
+                    </ul>
+                  </div>
+                  <div class="about__item item-about">
+                    <h2 class="_spoller"><span class="item-about__title">IT-безопасность</span><span class="item-about__icon"></span></h2>
+                    <ul class="item-about__list" data-index="3">
+                      <li><a href="#" class="item-about__link">Политика конфиденциальности</a></li>
+                      <li><a href="#" class="item-about__link">Пользовательское соглашение</a></li>
+                      <li><a href="#" class="item-about__link">Политика в отношении файлов Cookie</a></li>
+                    </ul>
+                  </div>
+                  <div class="about__item item-about">
+                    <h2 class="_spoller"><span class="item-about__title">О компании Семейный Доктор</span><span class="item-about__icon"></span></h2>
+                    <ul class="item-about__list" data-index="4">
+                      <li><a href="#" class="item-about__link">Главный офис</a></li>
+                      <li><a href="#" class="item-about__link">О нашей компании</a></li>
+                      <li><a href="#" class="item-about__link">Реквизиты</a></li>
+                      <li><a href="#" class="item-about__link">Лицензии на медицинскую деятельность</a></li>
+                      <li><a href="#" class="item-about__link">Платежные реквизиты</a></li>
+                      <li><a href="#" class="item-about__link">Медицинский персонал</a></li>
+                      <li><a href="#" class="item-about__link">Вакансии компании</a></li>
+                      <li><a href="#" class="item-about__link">Партнерство и сотрудничество</a></li>
+                    </ul>
+                  </div>
+                </nav>
               </div>
 
-              <div class="about__column about__column_middle">
-                <h1 class="about__title">О нашей компании</h1>
-                <p class="about__text">Лейкоз: обычно больной страдает болями в костях и суставах. Может быть опухали лимфатических узлов и гепатоспленомегалия. Часто наблюдается кровотечение кожи и слизистых оболочек. Лейкоз: обычно больной страдает болями в костях и суставах. Может быть опухали лимфатических узлов и гепатоспленомегалия. Часто наблюдается кровотечение кожи и слизистых оболочек. Лейкоз: обычно больной страдает болями в костях и суставах. Может быть опухали лимфатических узлов и гепатоспленомегалия. Часто наблюдается кровотечение кожи и слизистых оболочек. Лейкоз: обычно больной страдает болями в костях и суставах. Может быть опухали лимфатических узлов и гепатоспленомегалия. Часто наблюдается кровотечение кожи и слизистых оболочек.</p>
-                <h2 class="about__title-list">О нашей компании</h2>
-                <ul class="about__list">
-                  <li>Лейкоз: обычно больной страдает болями в костях и суставах. Может быть опухали лимфатических узлов и гепатоспленомегалия. Часто <a href="#">наблюдается</a> кровотечение кожи и слизистых оболочек.</li>
-                  <li>Лейкоз: обычно больной страдает болями в костях и суставах. Может быть опухали лимфатических узлов и гепатоспленомегалия. Часто <a href="#">наблюдается</a> кровотечение кожи и слизистых оболочек.</li>
-                </ul>
+              <div class="about__column about__column_middle" data-index="3" data-menu="1">
+                <h1 class="about__title">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h1>
+                <p class="about__text">Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации, которую клиника <span>«Семейный Доктор»</span>,  расположенная по адресу: 394026 Воронежская область, г. Воронеж, проспект Труда 65, офис 48,  доменное имя <a href="https://www.med24.online/">https://www.med24.online/</a>, может получить о Пользователе во время использования сайта Клиники, программ и продуктов клиники <span>«Семейный Доктор»</span>.</p>
+                <div class="about__article article1">
+                  <h2 class="about__title-article">ОБЩИЕ ПОЛОЖЕНИЯ</h2>
+                  <ol class="about__list">
+                    <li>Целью настоящей политики конфиденциальности является обеспечение защиты прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.</li>
+                    <li><span>Если Вы не согласны с условиями нашей Политики конфиденциальности, не используйте сайт <a href="https://www.med24.online/">https://www.med24.online/</a>!</span></li>
+                  </ol>
+                  <div class="about__article-section section11">
+                    <h3 class="about__title-section">ПРЕДМЕТ ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ</h3>
+                    <ol class="about__list">
+                      <li>Настоящая Политика конфиденциальности устанавливает обязательства Администрации сайта по неразглашению и обеспечению режима защиты конфиденциальности персональных данных, которые Пользователь предоставляет по запросу Администрации сайта при  оформлении вопроса либо заявки на консультацию или обратный звонок.</li>
+                      <li>
+                        Персональные данные, разрешённые к обработке в рамках настоящей Политики конфиденциальности, предоставляются Пользователем путём заполнения регистрационной формы на Сайте клиники «Семейный доктор» в разделах  «Консультация», «Вызвать врача на дом» и включают в себя следующую информацию:
+                        <ul class="about__sublist">
+                          <li>фамилию, имя, отчество Пользователя;</li>
+                          <li>контактный телефон Пользователя;</li>
+                          <li>адрес электронной почты (e-mail);</li>
+                        </ul>
+                      </li>
+                      <li>
+                        Администрация Сайта использует файлы cookies, которые позволяют идентифицировать Пользователя. Файлы cookies — это текстовые файлы, доступные Администрации, для обработки информации об активности Пользователя:
+                        <ul class="about__sublist">
+                          <li>IP адрес;</li>
+                          <li>информация о браузере (или иной программе, которая осуществляет доступ к показу рекламы);</li>
+                          <li>время доступа;</li>
+                          <li>адрес страницы, на которой расположен рекламный блок;</li>
+                          <li>реферер (адрес предыдущей страницы).</li>
+                        </ul>
+                      </li>
+                      <li>Пользователь может отключить возможность использования файлов cookies в настройках браузера, но отключение cookies может повлечь невозможность доступа к частям Сайта, требующим авторизации.</li>
+                      <li>Сайт осуществляет сбор статистики об IP-адресах своих посетителей. Данная информация используется с целью выявления и решения технических проблем.</li>
+                      <li>Любая иная персональная информация, неоговоренная выше (используемые браузеры и операционные системы и т.д.) подлежит надежному хранению и нераспространению, за исключением случаев, предусмотренных в п.п. 4.2. и 4.3. настоящей Политики конфиденциальности.</li>
+                    </ol>
+                  </div>
+                  <div class="about__article-section section12">
+                    <h3 class="about__title-section">Цели сбора персональной информации пользователя</h3>
+                    <ol class="about__list">
+                      <li>Главная цель Администрации при сборе персональных данных — идентификация Пользователя при оформлении заявки на консультацию или обратный звонок</li>
+                      <li>Установления с Пользователем обратной связи, для ответа на запросы пользователя, для предоставления информации и услуг, которые запрашивает пользователь,  включая направление уведомлений, запросов, касающихся использования Сайта, обработка запросов и заявок от Пользователя,  для внутреннего отчета, для формирования статистических данных</li>
+                      <li>Определения места нахождения Пользователя для обеспечения безопасности, предотвращения мошенничества.</li>
+                      <li>Проведение статистических и иных исследований, на основе обезличенных данных</li>
+                      <li>Мы не проверяем достоверность оставленных данных и не гарантируем обратной связи с нами при предоставлении некорректных сведений.</li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="about__article article2">
+                  <h2 class="about__title-article">СПОСОБЫ И СРОКИ ОБРАБОТКИ ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ</h2>
+                  <ol class="about__list">
+                    <li>Хранение персональных данных осуществляется в форме, позволяющей определить субъекта персональных данных, не дольше, чем этого требуют цели обработки персональных данных, если срок хранения персональных данных не установлен федеральным законом, договором, стороной которого, выгодоприобретателем или поручителем, по которому является субъект персональных данных. Обрабатываемые персональные данные подлежат уничтожению либо обезличиванию по достижении целей обработки или в случае утраты необходимости в достижении этих целей, если иное не предусмотрено федеральным законом.</li>
+                    <li>Пользователь соглашается с тем, что Администрация сайта вправе передавать персональные данные операторам связи, исключительно в целях выполнения заявки Пользователя, оформленного на Сайте клиники.</li>
+                    <li>Персональные данные Пользователя могут быть переданы в случаях, если это требуется, органам спецслужб или, если это требует законодательство.</li>
+                    <li>При утрате или разглашении персональных данных Администрация сайта информирует Пользователя об утрате или разглашении персональных данных.</li>
+                    <li>Администрация сайта принимает необходимые организационные и технические меры для защиты персональной информации Пользователя от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий третьих лиц.</li>
+                  </ol>
+                </div>
+                <div class="about__article article3">
+                  <h2 class="about__title-article">РАЗРЕШЕНИЕ СПОРОВ</h2>
+                  <ol class="about__list">
+                    <li>Все возможные споры, вытекающие из отношений, регулируемых настоящей Политикой, разрешаются в порядке, установленном действующим законодательством Российской Федерации, по нормам российского права.</li>
+                    <li>Соблюдение досудебного (претензионного) порядка урегулирования споров является обязательным.</li>
+                  </ol>
+                </div>
+                <div class="about__article article4">
+                  <h2 class="about__title-article">Дополнительные условия</h2>
+                  <ol class="about__list">
+                    <li>Администрация сайта вправе вносить изменения в настоящую Политику конфиденциальности без согласия Пользователя.</li>
+                    <li>Продолжение использования Сайта после внесения таких изменений  в Политику подтверждает согласие Пользователя с такими изменениями</li>
+                    <li>Настоящая Политика конфиденциальности теряет свою силу при появлении новой версии, размещенной на сайте <span>http://www.med24.online/</span></li>
+                    <li>Все предложения или вопросы по настоящей Политике конфиденциальности следует сообщать  раздел «Консультация» или на электронный адрес Сайта <a href="mailto:medusluga@gmail.com">medusluga@gmail.com</a></li>
+                    <li>Действующая Политика конфиденциальности размещена на странице по адресу <a href="https://www.med24.online/">https://www.med24.online/</a></li>
+                  </ol>
+                </div>
+                <div class="about__date">Обновлено «21» января 2021 г.</div>
               </div>
 
               <div class="about__column about__column_right">
                 <div class="about__contents contents-about">
                   <h2 class="contents-about__title">Оглавление</h2>
                   <div class="contents-about__body">
-                    <h3 class="contents-about__title-list">Общие положения</h3>
+                    <a href="#article1" class="contents-about__title-list _goto-block">Общие положения</a>
                     <ul class="contents-about__list">
-                      <li><a href="#" class="contents-about__link">Предмет политики конфендициальности</a></li>
-                      <li><a href="#" class="contents-about__link">Цели сбора персональной информации пользователя</a></li>
+                      <li><a href="#section11" class="contents-about__link _goto-block">Предмет политики конфендициальности</a></li>
+                      <li><a href="#section12" class="contents-about__link _goto-block">Цели сбора персональной информации пользователя</a></li>
                     </ul>
-                    <a href="#" class="contents-about__link">Способы и сроки обработки персональной информации</a>
-                    <a href="#" class="contents-about__link">Разрешение споров</a>
-                    <a href="#" class="contents-about__link">Дополнительные условия</a>
+                    <a href="#article2" class="contents-about__title-list _goto-block">Способы и сроки обработки персональной информации</a>
+                    <a href="#article3" class="contents-about__title-list _goto-block">Разрешение споров</a>
+                    <a href="#article4" class="contents-about__title-list _goto-block">Дополнительные условия</a>
                   </div>
                 </div>
               </div>

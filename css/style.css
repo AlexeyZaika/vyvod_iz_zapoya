@@ -338,7 +338,6 @@ body._lock {
 }
 
 .info-header__text {
-  font-family: 'PT Sans', sans-serif;
   font-size: 16px;
   line-height: 22px;
 }
@@ -731,7 +730,6 @@ textarea {
 .form-popup__text {
   margin-bottom: 15px;
   font-size: 16px;
-  font-family: 'PT Sans', sans-serif;
   color: #3C3C3C;
 }
 
@@ -1317,7 +1315,6 @@ textarea.form-popup__input {
 
 .price__subtitle {
   margin-bottom: 25px;
-  font-family: "PT Sans", sans-serif;
   line-height: normal;
   text-align: center;
 }
@@ -1401,10 +1398,6 @@ textarea.form-popup__input {
   width: 21px;
   height: 5px;
   vertical-align: middle;
-}
-
-.table-price__body {
-  font-family: "PT Sans", sans-serif;
 }
 
 .table-price__body .table-price__column_1 {
@@ -1620,7 +1613,6 @@ textarea.form-popup__input {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   margin-bottom: 15px;
-  font-family: "PT Sans", sans-serif;
   font-style: italic;
   line-height: normal;
 }
@@ -1652,7 +1644,6 @@ textarea.form-popup__input {
 
 .item-feedback__name,
 .item-feedback__date {
-  font-family: "PT Sans", sans-serif;
   line-height: normal;
 }
 
@@ -1740,7 +1731,6 @@ textarea.form-popup__input {
 
 .item-steps__text {
   margin-bottom: 20px;
-  font-family: "PT Sans", sans-serif;
   text-align: left;
 }
 
@@ -1822,7 +1812,6 @@ textarea.form-popup__input {
 }
 
 .item-warranty__text {
-  font-family: "PT Sans", sans-serif;
   line-height: 24px;
   text-align: center;
 }
@@ -1928,7 +1917,6 @@ textarea.form-popup__input {
 .spollers__body {
   display: none;
   padding: 0 110px 10px 30px;
-  font-family: "PT Sans", sans-serif;
   line-height: normal;
 }
 
