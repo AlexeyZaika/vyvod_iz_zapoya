@@ -2423,7 +2423,7 @@ if (link.length > 0) {
 			let block = blocks[index];
 			let block_item = document.querySelector('.' + block);
 			if (block_item) {
-				let block_offset = offset(block_item).top;
+				let block_offset = offset(block_item).top + 80;
 				let block_height = block_item.offsetHeight;
 				if ((pageYOffset > block_offset - window.innerHeight / 3) && pageYOffset < (block_offset + block_height) - window.innerHeight / 3) {
 					let current_links = document.querySelectorAll('._goto-block[href="#' + block + '"]');
