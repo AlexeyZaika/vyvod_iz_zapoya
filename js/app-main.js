@@ -2350,43 +2350,42 @@ window.addEventListener('scroll', scroll_scroll);
 function scroll_scroll() {
 	let src_value = currentScroll = pageYOffset;
 
-	let headerContent = document.querySelector('.header__content');
-	let styleHeader = getComputedStyle(headerContent);
-	let heightHeader = parseInt(styleHeader.height);
+	let header = document.querySelector('.header');
+	/*let styleHeader = getComputedStyle(header);
+	let heightHeader = parseInt(styleHeader.height);*/
 	
-	let header = document.querySelector('.menu-header');
 	let aboutMenu = document.querySelector('.about__menu');
 	let aboutContent = document.querySelector('.about__contents');
 	if (header !== null) {
-		if (src_value > heightHeader) {
+		if (src_value > 0) {
 			header.classList.add('_scroll');
 		} else {
 			header.classList.remove('_scroll');
 		}
-		if (src_value > scrollDirection && src_value > heightHeader + 200) {
+		/*if (src_value > scrollDirection && src_value > heightHeader + 200) {
 			header.classList.add('_disable');
 		} else {
 			header.classList.remove('_disable');
 		}
-		scrollDirection = src_value <= 0 ? 0 : src_value;
+		scrollDirection = src_value <= 0 ? 0 : src_value;*/
 	}
 
 	if (aboutMenu !== null || aboutContent !== null) {
-		if (src_value > heightHeader) {
+		if (src_value > 0) {
 			aboutMenu.classList.add('_scroll');
 			aboutContent.classList.add('_scroll');
 		} else {
 			aboutMenu.classList.remove('_scroll');
 			aboutContent.classList.remove('_scroll');
 		}
-		if (src_value > scrollDirec && src_value > heightHeader + 200) {
+		/*if (src_value > scrollDirec && src_value > heightHeader + 200) {
 			aboutMenu.classList.add('_disable');
 			aboutContent.classList.add('_disable');
 		} else {
 			aboutMenu.classList.remove('_disable');
 			aboutContent.classList.remove('_disable');
 		}
-		scrollDirec = src_value <= 0 ? 0 : src_value;
+		scrollDirec = src_value <= 0 ? 0 : src_value;*/
 	}
 }
 setTimeout(function () {

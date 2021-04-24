@@ -2444,23 +2444,22 @@ window.addEventListener('scroll', scroll_scroll);
 function scroll_scroll() {
 	let src_value = currentScroll = pageYOffset;
 
-	let headerContent = document.querySelector('.header__content');
-	let styleHeader = getComputedStyle(headerContent);
-	let heightHeader = parseInt(styleHeader.height);
+	let header = document.querySelector('.header');
+	/*let styleHeader = getComputedStyle(header);
+	let heightHeader = parseInt(styleHeader.height);*/
 	
-	let header = document.querySelector('.menu-header');
 	if (header !== null) {
-		if (src_value > heightHeader) {
+		if (src_value > 0) {
 			header.classList.add('_scroll');
 		} else {
 			header.classList.remove('_scroll');
 		}
-		if (src_value > scrollDirection && src_value > heightHeader + 200) {
+		/*if (src_value > scrollDirection && src_value > heightHeader + 200) {
 			header.classList.add('_disable');
 		} else {
 			header.classList.remove('_disable');
 		}
-		scrollDirection = src_value <= 0 ? 0 : src_value;
+		scrollDirection = src_value <= 0 ? 0 : src_value;*/
 	}
 }
 setTimeout(function () {
