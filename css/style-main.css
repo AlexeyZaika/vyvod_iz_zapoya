@@ -1176,6 +1176,10 @@ textarea.form-popup__input {
   color: #333;
 }
 
+.article__title-list_link {
+  z-index: 1;
+}
+
 .article__icon {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 30px;
