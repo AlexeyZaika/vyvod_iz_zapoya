@@ -1165,7 +1165,7 @@ textarea.form-popup__input {
 
 .article__title-list {
   position: relative;
-  z-index: 1;
+  z-index: -1;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
