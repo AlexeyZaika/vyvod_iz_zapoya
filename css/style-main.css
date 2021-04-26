@@ -37,7 +37,7 @@ body {
 
 body {
   line-height: 1;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Arial", sans-serif;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -46,7 +46,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 input::-ms-clear {
@@ -171,7 +171,7 @@ body._lock {
       -ms-flex: 0 0 210px;
           flex: 0 0 210px;
   margin: 0 0 0 10px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   line-height: 1.2;
   -webkit-transition: all 0.5s ease 0s;
@@ -293,8 +293,7 @@ body._lock {
 
 .info-header__item_phone .info-header__text {
   position: relative;
-  font-size: 28px;
-  font-family: "Fira Sans", sans-serif;
+  font-size: 26px;
   font-weight: 700;
   color: #000;
   -webkit-transition: color ease 0.5s;
@@ -1134,11 +1133,11 @@ textarea.form-popup__input {
 
 .article__main-icon {
   margin-bottom: 30px;
-  width: 50px;
 }
 
 .article__main-icon img {
-  width: 100%;
+  width: 50px;
+  height: 50px;
 }
 
 .article__item h2 {

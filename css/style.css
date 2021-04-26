@@ -171,7 +171,7 @@ body._lock {
       -ms-flex: 0 0 210px;
           flex: 0 0 210px;
   margin: 0 0 0 10px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   line-height: 1.2;
   -webkit-transition: all 0.5s ease 0s;
@@ -293,8 +293,7 @@ body._lock {
 
 .info-header__item_phone .info-header__text {
   position: relative;
-  font-size: 28px;
-  font-family: "Fira Sans", sans-serif;
+  font-size: 26px;
   font-weight: 700;
   color: #000;
   -webkit-transition: color ease 0.5s;
@@ -2431,7 +2430,6 @@ textarea.form-popup__input {
     display: inline-block;
     margin: 0 15px;
     font-size: 24px;
-    font-family: "Fira Sans", sans-serif;
     vertical-align: middle;
   }
 
