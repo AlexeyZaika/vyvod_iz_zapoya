@@ -367,6 +367,7 @@ body._lock {
 .info-header__text {
   font-size: 16px;
   line-height: 22px;
+  white-space: nowrap;
 }
 
 .info-header__text span {
