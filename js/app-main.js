@@ -2404,7 +2404,9 @@ if (link.length > 0) {
 		}
 		el.addEventListener('click', function (e) {
 			let target_block_class = el.getAttribute('href').replace('#', '');
-			let target_block = document.querySelector('.' + target_block_class);
+			//let target_block = document.querySelector('.' + target_block_class);
+			let target_block = document.querySelector(`a[name='${target_block_class}']`);
+			console.log(target_block);
 			_goto(target_block, 300);
 			e.preventDefault();
 		})
@@ -2420,9 +2422,9 @@ if (link.length > 0) {
 		}
 		for (let index = 0; index < blocks.length; index++) {
 			let block = blocks[index];
-			let block_item = document.querySelector('.' + block);
+			let block_item = document.querySelector(`a[name='${block}']`);
 			if (block_item) {
-				let block_offset = offset(block_item).top + 80;
+				let block_offset = offset(block_item).top;
 				let block_height = block_item.offsetHeight;
 				if ((pageYOffset > block_offset - window.innerHeight / 3) && pageYOffset < (block_offset + block_height) - window.innerHeight / 3) {
 					let current_links = document.querySelectorAll('._goto-block[href="#' + block + '"]');
@@ -2441,7 +2443,7 @@ function _goto(target_block, speed, offset = 0) {
 		speedAsDuration: true,
 		speed: speed,
 		header: header,
-		offset: offset + 80,
+		offset: offset + 180,
 		easing: 'easeOutQuad',
 	};
 	let scr = new SmoothScroll();
@@ -2475,6 +2477,28 @@ for (let i = 0; i < popupCityCloses.length; i++) {
 			popup_close();
 		}
 	});
+}
+
+//about menu show
+const aboutButton = document.querySelector('.contents-about__button');
+if (aboutButton) {
+	const aboutBody = document.querySelector('.contents-about__body');
+	const aboutBack = document.querySelector('.contents-about__back');
+	const aboutLinks = aboutBody.querySelectorAll('a');
+	aboutButton.addEventListener('click', function() {
+		aboutButton.classList.toggle('_active');
+		aboutBody.classList.toggle('_active');
+		aboutBack.classList.toggle('_show');
+	});
+
+	for (let i = 0; i < aboutLinks.length; i++) {
+		let aboutLink = aboutLinks[i];
+		aboutLink.addEventListener('click', function() {
+			aboutButton.classList.remove('_active');
+			aboutBody.classList.remove('_active');
+			aboutBack.classList.remove('_show');
+		});
+	}
 }
 
 //AJAX
