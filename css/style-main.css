@@ -1868,9 +1868,13 @@ textarea.form-popup__input {
   display: none;
 }
 
+.about__column_middle {
+  color: #4a4742;
+}
+
 .about__column_middle a {
-  color: #329cff;
-  background-color: rgba(50, 156, 255, 0.2);
+  color: #0f64a0;
+  background-color: #e4eef8;
 }
 
 .about__menu {
@@ -2082,7 +2086,7 @@ textarea.form-popup__input {
   visibility: hidden;
   width: 0;
   height: 0;
-  background-color: #fff;
+  background-color: #f9f9f9;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
@@ -2094,7 +2098,7 @@ textarea.form-popup__input {
   visibility: visible;
   width: auto;
   height: auto;
-  padding: 10px 15px;
+  padding: 15px 15px;
 }
 
 .contents-about__title-list {
@@ -2102,7 +2106,7 @@ textarea.form-popup__input {
   position: relative;
   margin-bottom: 10px;
   font-size: 16px;
-  color: #333;
+  color: #35312e;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -2148,7 +2152,7 @@ textarea.form-popup__input {
   display: inline-block;
   padding: 5px 0;
   font-size: 16px;
-  color: #333;
+  color: #35312e;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -2180,7 +2184,7 @@ textarea.form-popup__input {
   width: 60px;
   height: 60px;
   font-size: 0;
-  background: #0f64a0 url("../img/icons/about-icon.png") center/50px no-repeat;
+  background: #0f64a0 url("../img/icons/about-icon.png") center/60px no-repeat;
   border-radius: 50%;
 }
 
@@ -2198,10 +2202,10 @@ textarea.form-popup__input {
 .contents-about__back {
   position: relative;
   display: block;
-  margin: 20px auto 0;
-  width: 30px;
-  height: 30px;
-  background-color: #fff;
+  margin: 50px auto 0;
+  width: 40px;
+  height: 40px;
+  background-color: #f9f9f9;
   border: 1px solid #e1e1e1;
   border-radius: 50%;
 }
@@ -2213,7 +2217,7 @@ textarea.form-popup__input {
   width: 10px;
   height: 1px;
   background-color: #4a4742;
-  top: 50%;
+  top: calc(50% - 1px);
 }
 
 .contents-about__back::before {
@@ -2882,6 +2886,7 @@ textarea.form-popup__input {
 
   .about__contents {
     position: static;
+    max-width: none;
   }
 
   .about__contents._scroll {
@@ -2904,7 +2909,8 @@ textarea.form-popup__input {
     visibility: visible;
     width: auto;
     height: auto;
-    padding: 10px 15px;
+    padding: 15px 15px;
+    background-color: #fff;
     border-bottom: none;
   }
 
