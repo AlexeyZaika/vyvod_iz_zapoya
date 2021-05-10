@@ -1894,6 +1894,7 @@ textarea.form-popup__input {
 .about__contents {
   position: fixed;
   z-index: 20;
+  max-width: 275px;
   right: 0;
   top: 320px;
   padding: 0 10px;
@@ -2134,6 +2135,7 @@ textarea.form-popup__input {
 }
 
 .contents-about__list {
+  margin-bottom: 10px;
   padding-left: 20px;
   overflow: hidden;
   -webkit-transition: all 0.5s ease 0s;
@@ -2178,19 +2180,19 @@ textarea.form-popup__input {
   width: 60px;
   height: 60px;
   font-size: 0;
-  background: #329cff url("../img/icons/about-icon.png") center/50px no-repeat;
+  background: #0f64a0 url("../img/icons/about-icon.png") center/50px no-repeat;
   border-radius: 50%;
 }
 
 .contents-about__button._active {
-  padding: 0 10px 0 80px;
+  padding: 12px 10px 12px 60px;
   width: 100%;
-  font-size: 20px;
-  font-weight: 700;
+  height: auto;
+  font-size: 18px;
   text-align: left;
   color: #fff;
   border-radius: 0;
-  background: #329cff url("../img/icons/about-icon.png") left 10px center/50px no-repeat;
+  background: #0f64a0 url("../img/icons/about-icon.png") left 15px center/35px no-repeat;
 }
 
 .contents-about__back {
@@ -2200,8 +2202,7 @@ textarea.form-popup__input {
   width: 30px;
   height: 30px;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.64);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.64);
+  border: 1px solid #e1e1e1;
   border-radius: 50%;
 }
 
@@ -2209,21 +2210,21 @@ textarea.form-popup__input {
 .contents-about__back::after {
   content: '';
   position: absolute;
-  width: 15px;
-  height: 2px;
-  background-color: #333;
-  top: calc(50% - 1px);
+  width: 10px;
+  height: 1px;
+  background-color: #4a4742;
+  top: 50%;
 }
 
 .contents-about__back::before {
-  left: calc(50% - 12px);
+  left: calc(50% - 8px);
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
 .contents-about__back::after {
-  right: calc(50% - 12px);
+  right: calc(50% - 8px);
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -2895,7 +2896,7 @@ textarea.form-popup__input {
     margin-bottom: 15px;
     padding: 10px 15px 10px 60px;
     color: #fff;
-    background: #329cff url("../img/icons/about-icon.png") left 15px center/35px no-repeat;
+    background: #0f64a0 url("../img/icons/about-icon.png") left 15px center/35px no-repeat;
   }
 
   .contents-about__body {
