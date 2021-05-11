@@ -935,15 +935,15 @@ textarea.form-popup__input {
   margin-bottom: 20px;
 }
 
-.footer__block .footer__text {
+.footer__block .footer__text:last-child {
   margin-bottom: 0;
 }
 
 .footer__logo {
   display: block;
   margin: 0 auto 20px;
-  width: 121px;
-  height: 121px;
+  width: 112px;
+  height: 112px;
 }
 
 .footer__logo img {
@@ -951,7 +951,7 @@ textarea.form-popup__input {
 }
 
 .footer__text {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .footer__text span {
@@ -964,8 +964,6 @@ textarea.form-popup__input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 10px;
-  margin-top: 5px;
   width: 45px;
   height: 45px;
   padding: 5px;
@@ -2418,6 +2416,39 @@ textarea.form-popup__input {
   display: none;
 }
 
+.contents-about__back-link {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-color: #f9f9f9;
+  border-radius: 50%;
+}
+
+.contents-about__back-link::before,
+.contents-about__back-link::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background-color: #4a4742;
+  top: calc(50% - 1px);
+}
+
+.contents-about__back-link::before {
+  left: calc(50% - 8px);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.contents-about__back-link::after {
+  right: calc(50% - 8px);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 @media (min-width: 479.98px) {
   .footer__block {
     display: -webkit-box;
@@ -2431,12 +2462,8 @@ textarea.form-popup__input {
   .footer__logo {
     margin: 0 10px 0 0;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 121px;
-            flex: 0 0 121px;
-  }
-
-  .footer__text span {
-    margin-top: 0;
+        -ms-flex: 0 0 112px;
+            flex: 0 0 112px;
   }
 
   .footer__text_dflex {
@@ -3137,7 +3164,15 @@ textarea.form-popup__input {
   }
 
   .contents-about__title {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     padding: 10px 15px 10px 60px;
     color: #fff;
