@@ -945,6 +945,7 @@ textarea.form-popup__input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 10px;
   width: 45px;
   height: 45px;
   padding: 5px;
@@ -954,17 +955,17 @@ textarea.form-popup__input {
   border-radius: 50%;
 }
 
-.footer__contact {
+.footer__text_dflex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.footer__contact {
+  text-align: center;
 }
 
 .footer__title {
@@ -976,6 +977,10 @@ textarea.form-popup__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer__icon {
@@ -1003,22 +1008,15 @@ textarea.form-popup__input {
   fill: #fff;
 }
 
-.footer__links {
-  position: relative;
-  display: inline-block;
-  margin-top: 20px;
-  font-size: 16px;
-  color: inherit;
+.footer__logo {
+  display: block;
+  margin: 0 auto;
+  width: 121px;
+  height: 121px;
 }
 
-.footer__links::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.footer__logo img {
   width: 100%;
-  height: 1px;
-  background-color: #4a4742;
 }
 
 .page {
@@ -2324,7 +2322,7 @@ textarea.form-popup__input {
   position: relative;
   display: inline-block;
   padding: 5px 0;
-  font-size: 16px;
+  font-size: 14px;
   color: #35312e;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
@@ -2452,20 +2450,16 @@ textarea.form-popup__input {
     padding-right: 20px;
   }
 
+  .footer__text_dflex {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
   .footer__contact {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 270px;
             flex: 0 0 270px;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    text-align: right;
-  }
-
-  .footer__social {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
   }
 
   .title-section {
@@ -3116,7 +3110,6 @@ textarea.form-popup__input {
   .contents-about__title {
     display: block;
     position: relative;
-    margin-bottom: 15px;
     padding: 10px 15px 10px 60px;
     color: #fff;
     background: #0f64a0 url("../img/icons/about-icon.png") left 15px center/35px no-repeat;
@@ -3128,7 +3121,6 @@ textarea.form-popup__input {
     width: auto;
     height: auto;
     padding: 15px 15px;
-    background-color: #fff;
     border-bottom: none;
   }
 

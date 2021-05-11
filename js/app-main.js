@@ -2499,6 +2499,18 @@ if (aboutButton) {
 			aboutBack.classList.remove('_show');
 		});
 	}
+
+	document.addEventListener('click', function(e) {
+		const target = e.target;
+		const its_aboutBody = target == aboutBody || aboutBody.contains(target);
+		const its_aboutButton = target == aboutButton;
+		const aboutBody_is_active = aboutBody.classList.contains('_active');
+		if (!its_aboutBody && !its_aboutButton && aboutBody_is_active) {
+			aboutButton.classList.remove('_active');
+			aboutBody.classList.remove('_active');
+			aboutBack.classList.remove('_show');
+		}
+	});
 }
 
 //AJAX
