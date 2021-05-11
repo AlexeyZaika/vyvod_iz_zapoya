@@ -931,6 +931,20 @@ textarea.form-popup__input {
   color: #4a4742;
 }
 
+.footer__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer__block .footer__text {
+  margin-bottom: 0;
+}
+
 .footer__text {
   margin-bottom: 20px;
 }
@@ -1009,8 +1023,7 @@ textarea.form-popup__input {
 }
 
 .footer__logo {
-  display: block;
-  margin: 0 auto;
+  margin-right: 10px;
   width: 121px;
   height: 121px;
 }
