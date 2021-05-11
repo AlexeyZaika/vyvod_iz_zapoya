@@ -119,7 +119,7 @@ body._lock {
 
 .header {
   position: fixed;
-  z-index: 20;
+  z-index: 25;
   top: 0;
   left: 0;
   width: 100%;
@@ -846,6 +846,176 @@ textarea {
 textarea.form-popup__input {
   padding: 18px;
   min-height: 120px;
+}
+
+.footer {
+  position: relative;
+  z-index: 21;
+  padding: 40px 0 0;
+  background-color: #fcfcfc;
+  -webkit-box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.footer__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  padding: 0 10px;
+  margin-bottom: 40px;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 700;
+  color: #4a4742;
+}
+
+.footer__title_empty {
+  font-size: 0;
+  margin-bottom: 0;
+}
+
+.footer__title a {
+  color: inherit;
+}
+
+.footer__list li {
+  margin-bottom: 10px;
+}
+
+.footer__list li:last-child {
+  margin-bottom: 0;
+}
+
+.footer__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  color: #b20c1c;
+}
+
+.footer__link svg {
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  fill: #b20c1c;
+}
+
+.footer__link svg polyline,
+.footer__link svg path {
+  stroke: #B20C1C;
+}
+
+.footer__content {
+  padding: 20px 0;
+  font-size: 14px;
+  background-color: #e5e5e5;
+  color: #4a4742;
+}
+
+.footer__text {
+  margin-bottom: 20px;
+}
+
+.footer__text span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  border: 2px solid #4a4742;
+  border-radius: 50%;
+}
+
+.footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer__title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #4a4742;
+  border-radius: 50%;
+}
+
+.footer__icon:first-child {
+  margin-left: 0;
+}
+
+.footer__icon svg {
+  fill: #fff;
+}
+
+.footer__links {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  color: inherit;
+}
+
+.footer__links::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #4a4742;
 }
 
 .page {
@@ -1897,7 +2067,7 @@ textarea.form-popup__input {
 
 .about__contents {
   position: fixed;
-  z-index: 20;
+  z-index: 25;
   max-width: 275px;
   right: 0;
   top: 320px;
@@ -2257,6 +2427,38 @@ textarea.form-popup__input {
     max-width: 750px;
   }
 
+  .footer__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+
+  .footer__content ._container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .footer__info {
+    padding-right: 20px;
+  }
+
+  .footer__contact {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 270px;
+            flex: 0 0 270px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    text-align: right;
+  }
+
+  .footer__social {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
   .title-section {
     margin-bottom: 60px;
     font-size: 35px;
@@ -2563,6 +2765,12 @@ textarea.form-popup__input {
   .menu-header__button {
     padding: 10px 20px;
     width: auto;
+  }
+
+  .footer__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
   }
 
   .page {
@@ -2891,6 +3099,7 @@ textarea.form-popup__input {
 
   .about__contents._scroll {
     position: fixed;
+    z-index: 20;
     width: 300px;
     right: auto;
   }
