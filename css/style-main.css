@@ -952,10 +952,12 @@ textarea.form-popup__input {
 
 .footer__text {
   margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer__text span {
-  float: left;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
