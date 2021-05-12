@@ -62,10 +62,20 @@
         <!--breadcrumbs start-->
         <div class="breadcrumbs">
           <div class="_container">
-            <ul class="breadcrumbs__list">
-              <li><a href="main.html" class="breadcrumbs__item">Главная</a></li>
-              <li><a href="services.html" class="breadcrumbs__item breadcrumbs__item_active">Сервис</a></li>
-            </ul>
+            <ol class="breadcrumb breadcrumbs__list" itemscope itemtype="">
+              <li itemscope itemprop="itemListElement" itemtype="">
+                <a class="breadcrumbs__item" href="main.html" itemprop="item">
+                  <span itemprop="name">Главная</span>
+                </a>
+                <meta itemprop="position" content="1" />
+              </li>
+              <li itemscope itemprop="itemListElement" itemtype="">
+                <a class="breadcrumbs__item breadcrumbs__item_active" href="services.html" itemprop="item">
+                  <span itemprop="name">Сервис</span>
+                </a>
+                <meta itemprop="position" content="2" />
+              </li>
+            </ol>
           </div>
         </div>
         <!--breadcrumbs end-->
@@ -106,37 +116,159 @@
         </section>
         <!--article end-->
 			</main>
-			<footer class="header header_footer">
-	<div class="header__content _container">
-		<a href="main.html" class="header__logo">
-			<picture>
-				<source data-srcset="img/logo.webp" srcset="" type="image/webp">
-				<img data-src="img/logo.png" src="" alt="">
-			</picture>
-		</a>
-		<div class="header__slogan">Наркологичесткая помощь<br> <b>на дому и в клинике</b> {вашем городе}</div>
-		<div class="header__info info-header">
-			<div class="info-header__column info-header__column_1">
-				<div class="info-header__item info-header__item_shedule">
-					<span class="info-header__icon"></span>
-					<div class="info-header__text">работаем <span>24 / 7</span></div>
-				</div>
-				<div class="info-header__item info-header__item_region info-header__item_mail">
-					<span class="info-header__icon"></span>
-					<a href="mailto:medusluga@gmail.com" class="info-header__text">medusluga@gmail.com</a>
-				</div>
-			</div>
-			<div class="info-header__column info-header__column_2">
-				<div class="info-header__item info-header__item_phone">
-					<a href="tel:+79581117219" class="info-header__text">{+7(958)111-7-219}</a>
-				</div>
-				<div class="info-header__item info-header__item_callback">
-					<span class="info-header__icon"></span>
-					<a href="#callback" class="info-header__text _popup-link">Обратный звонок</a>
-				</div>
-			</div>
-		</div>
+			<footer class="footer">
+	<div class="_container">
+    <div class="footer__row">
+
+      <div class="footer__column">
+        <h2 class="footer__title">Инструменты</h2>
+        <ul class="footer__list">
+          <li>
+            <a href="#" class="footer__link">
+              <svg id="Lag_1" data-name="Lag 1" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                <g>
+                  <path class="cls-1" d="M24.87,4H15.13A12.15,12.15,0,0,0,3,16.1v3.5a12.16,12.16,0,0,0,8.69,11.69l-.09,6.24a.51.51,0,0,0,.32.47h.18a.51.51,0,0,0,.38-.2l5.33-6.07h7.06A12.14,12.14,0,0,0,37,19.6V16.1A12.15,12.15,0,0,0,24.87,4ZM36,19.6A11.15,11.15,0,0,1,24.87,30.73H17.59a.5.5,0,0,0-.38.17l-4.59,5.22.08-5.26a.5.5,0,0,0-.37-.49A11.17,11.17,0,0,1,4,19.6V16.1A11.15,11.15,0,0,1,15.1,5h9.77A11.15,11.15,0,0,1,36,16.1Z"/>
+                  <path class="cls-1" d="M29.65,14.83a1.13,1.13,0,0,0-.64-.2h-.08a.87.87,0,0,0-.31.1l-5.27,1.91V14.87a1,1,0,0,0-1-1H12a1,1,0,0,0-1,1v7.24a1,1,0,0,0,1,1H22.35a1,1,0,0,0,1-1V20.43l5.35,1.91H29a1.13,1.13,0,0,0,1.13-1.12V15.75A1.12,1.12,0,0,0,29.65,14.83Zm-7.3,7.28H12V14.87H22.35Zm6.78-.89c0,.07-.06.12-.17.15l-5.61-2V17.7L29,15.63h0a.14.14,0,0,1,.06.11Z"/>
+                </g>
+              </svg>
+              <span>Видеоконсультации</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">
+              <svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-300.000000, -200.000000)">
+                        <g transform="translate(300.000000, 200.000000)">
+                            <g transform="translate(7.000000, 7.000000)">
+                                <polyline stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" points="8.27581632 12.4908201 3.77265369 12.4908201 0.0769929324 25.8567931 25.9466182 25.8567931 22.2509575 12.4908201 17.7477948 12.4908201"></polyline>
+                                <path d="M8.27581632,12.4908201 C7.29092273,10.1794614 6.54439926,8.01608323 6.54439926,6.7625459 C6.54439926,3.07162791 9.43994946,0.0795593635 13.0118056,0.0795593635 C16.5836617,0.0795593635 19.4792119,3.07162791 19.4792119,6.7625459 C19.4792119,8.01608323 18.7326884,10.1794614 17.7477948,12.4908201 C15.8315947,16.9856059 13.0118056,22.0379437 13.0118056,22.0379437 C13.0118056,22.0379437 10.1920164,16.9856059 8.27581632,12.4908201 L8.27581632,12.4908201 Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M14.2255818,4.18897972 C13.4496149,4.34809845 12.8083365,5.07166993 12.4977487,6.00996794 C12.4759707,6.07596033 12.4186778,6.16439685 12.3432925,6.19287072 L11.9218044,6.33524011 C11.8209555,6.36471895 11.7268075,6.26623283 11.6963183,6.19287072 C11.3823801,5.40632173 10.8767954,4.89178202 10.286109,5.01572713 C9.72390152,5.13732734 9.06888627,5.80897586 9.27192424,6.86217434 C9.49741031,8.03730801 11.7653378,10.1708389 12.238423,10.1835684 C12.7292656,10.193283 15.4565415,7.85206031 15.8760193,5.98752382 C16.2097252,4.4914728 15.053816,4.01143672 14.2255818,4.18897972 L14.2255818,4.18897972 Z"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+              </svg>
+              <span>Поиск медицинских услуг</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">
+              <svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+                    <g transform="translate(-400.000000, -200.000000)" stroke="#B20C1C" stroke-width="1.5">
+                        <g transform="translate(400.000000, 200.000000)">
+                            <g transform="translate(5.000000, 7.000000)">
+                                <path d="M28.3498542,25.9241983 L1.66763848,25.9241983 C0.99755102,25.9241983 0.454810496,25.3814577 0.454810496,24.7113703 L0.454810496,8.22539942 C0.454810496,7.55591837 0.99755102,7.01257143 1.66763848,7.01257143 L28.3498542,7.01257143 C29.0199417,7.01257143 29.5626822,7.55591837 29.5626822,8.22539942 L29.5626822,24.7113703 C29.5626822,25.3814577 29.0199417,25.9241983 28.3498542,25.9241983 L28.3498542,25.9241983 Z" stroke-linejoin="round"></path>
+                                <path d="M7.73177843,6.86030087 L7.73177843,3.65782857 C7.73177843,1.88891895 9.12774344,0.454749854 10.8505656,0.454749854 L19.1669271,0.454749854 C20.8897493,0.454749854 22.2857143,1.88891895 22.2857143,3.65782857 L22.2857143,6.86030087" stroke-linejoin="round"></path>
+                                <polygon points="18.6427429 14.9407673 16.2170869 14.9407673 16.2170869 12.5151114 13.1850169 12.5151114 13.1850169 14.9407673 10.7593609 14.9407673 10.7593609 17.9728373 13.1850169 17.9728373 13.1850169 20.3984933 16.2170869 20.3984933 16.2170869 17.9728373 18.6427429 17.9728373"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+              </svg>
+              <span>Поиск медицинских учреждений </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <h2 class="footer__title"><a href="#">О med24.online</a></h2>
+        <ul class="footer__list">
+          <li>
+            <a href="#" class="footer__link">IT безопасность</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">О компании</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">О платформе</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Связаться с нами</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Политика конфиденциальности</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Пользовательское соглашение</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Политика использования файлов Cookie</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <h2 class="footer__title footer__title_empty"></h2>
+        <ul class="footer__list">
+          <li>
+            <a href="#" class="footer__link">Новости med24.online</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Клинические случаи</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">FAQ</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <h2 class="footer__title">Услуги</h2>
+        <ul class="footer__list">
+          <li>
+            <a href="#" class="footer__link">Алкоголизм</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Наркомания</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Капельницы</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Кодировка</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Детоксикация</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
 	</div>
+
+  <div class="footer__content">
+    <div class="_container">
+      <div class="footer__info">
+        <div class="footer__block">
+          <a href="main.html" class="footer__logo">
+            <img data-src="img/logo.svg" src="" alt="">
+          </a>
+          <div class="footer__block-text">
+            <p class="footer__text">2014-2021, ООО «Семейный доктор» ОГРН 1153668014390 <br> Свидетельство о регистрации в СМИ серия Эл №С77-79982 от 25.12.2020 г.</p>
+            <p class="footer__text">Используя сайт, вы соглашаетесь на обработку персональных данных. Если вы не согласны, следует покинуть сайт.</p>
+          </div>
+        </div>
+        <p class="footer__text"><span>14+</span>Материалы, представленные на сайте med24.online, носят информационный характер и не могут быть использованы для постановки диагноза, назначения лечения и не заменяют прием врача. Компания не несёт ответственности за возможные негативные последствия, возникшие в результате использования информации, размещенной на сайте. Имеются противопоказания, необходима консультация специалиста.</p>
+      </div>
+      <div class="footer__contact">
+        <h3 class="footer__title">Мы в социальных сетях:</h3>
+        <div class="footer__social">
+          <a href="#" class="footer__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="15" viewBox="0 0 21 12"><defs><path d="M1296.23383,9563.81725h1.19488c0,0 0.36072,-0.04013 0.54531,-0.24422c0.16949,-0.18746 0.16422,-0.53945 0.16422,-0.53945c0,0 -0.02357,-1.64875 0.72041,-1.89182c0.73368,-0.2402 1.67576,1.59371 2.67426,2.29712c0.75485,0.53429 1.32866,0.41677 1.32866,0.41677l2.66956,-0.03841c0,0 1.39652,-0.08828 0.73425,-1.21764c-0.05413,-0.09115 -0.38567,-0.83527 -1.98509,-2.36133c-1.67416,-1.59772 -1.44951,-1.33975 0.56671,-4.10352c1.22818,-1.68429 1.71902,-2.7116 1.56567,-3.15131c-0.14626,-0.41849 -1.04942,-0.30842 -1.04942,-0.30842l-3.00579,0.01949c0,0 -0.22305,-0.0321 -0.38818,0.06937c-0.16148,0.09918 -0.26527,0.33307 -0.26527,0.33307c0,0 -0.47585,1.30134 -1.11042,2.40891c-1.33839,2.33725 -1.87328,2.46165 -2.09221,2.31661c-0.50903,-0.33881 -0.38177,-1.35867 -0.38177,-2.08386c0,-2.26559 0.33417,-3.21035 -0.65071,-3.454c-0.3265,-0.08255 -0.56717,-0.13587 -1.40282,-0.14447c-1.07265,-0.01089 -1.9804,0.00287 -2.49401,0.26256c-0.34218,0.17256 -0.60596,0.55665 -0.4454,0.57729c0.1989,0.02752 0.64877,0.12497 0.88715,0.45977c0.30785,0.43168 0.29709,1.39822 0.29709,1.39822c0,0 0.17727,2.66689 -0.41325,2.99709c-0.40489,0.22816 -0.96073,-0.23619 -2.15401,-2.3556c-0.61146,-1.08693 -1.073,-2.28852 -1.073,-2.28852c0,0 -0.08904,-0.22415 -0.24776,-0.34454c-0.19249,-0.14561 -0.46188,-0.1909 -0.46188,-0.1909l-2.8561,0.01949c0,0 -0.42881,0.01204 -0.58628,0.20409c-0.14008,0.17084 -0.01122,0.5234 -0.01122,0.5234c0,0 2.23595,5.38078 4.76807,8.09238c2.32189,2.48516 4.95838,2.32235 4.95838,2.32235z" id="Path-0"/></defs><g transform="matrix(1,0,0,1,-1286,-9552)"><g><use xlink:href="#Path-0"fill-opacity="1"/></g></g></svg>
+          </a>
+          <a href="#" class="footer__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 774 1000.2" width="20" height="30"><path d="M0 359c0-42 8.8-83.7 26.5-125s43-79.7 76-115 76.3-64 130-86S345.7 0 411 0c106 0 193 32.7 261 98s102 142.3 102 231c0 114-28.8 208.2-86.5 282.5S555.3 723 464 723c-30 0-58.2-7-84.5-21s-44.8-31-55.5-51l-40 158c-3.3 12.7-7.7 25.5-13 38.5S259.8 873 253.5 885c-6.3 12-12.7 23.3-19 34s-12.7 20.7-19 30-11.8 17.2-16.5 23.5-9 11.8-13 16.5l-6 8c-2 2.7-4.7 3.7-8 3s-5.3-2.7-6-6c0-.7-.5-5.3-1.5-14s-2-17.8-3-27.5-2-22.2-3-37.5-1.3-30.2-1-44.5 1.3-30.2 3-47.5 4.2-33.3 7.5-48c7.3-31.3 32-135.7 74-313-5.3-10.7-9.7-23.5-13-38.5s-5-27.2-5-36.5l-1-15c0-42.7 10.8-78.2 32.5-106.5S303.3 223 334 223c24.7 0 43.8 8.2 57.5 24.5S412 284.3 412 309c0 15.3-2.8 34.2-8.5 56.5s-13.2 48-22.5 77-16 52.5-20 70.5c-6.7 30-.8 56 17.5 78s42.8 33 73.5 33c52.7 0 96.2-29.8 130.5-89.5S634 402.7 634 318c0-64.7-21-117.5-63-158.5S470.3 98 395 98c-84 0-152.2 27-204.5 81S112 297.7 112 373c0 44.7 12.7 82.3 38 113 8.7 10 11.3 20.7 8 32-1.3 3.3-3.3 11-6 23s-4.7 19.7-6 23c-1.3 7.3-4.7 12.2-10 14.5s-11.3 2.2-18-.5c-39.3-16-68.8-43.5-88.5-82.5S0 411 0 359z"/></svg>
+          </a>
+          <a href="#" class="footer__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="24" viewBox="0 0 10 20"><defs><path d="M1377.42496,9568.36105h-3.99044v-9.3771h-1.99368v-3.23099h1.99368v-1.9394c0,-2.6365 1.12541,-4.20442 4.32438,-4.20442h2.66315v3.23271h-1.66477c-1.24523,0 -1.32717,0.4506 -1.32717,1.29389l-0.00515,1.61722h3.01586l-0.35248,3.23099h-2.66338v9.3771z" id="Path-2"/></defs><g transform="matrix(1,0,0,1,-1371,-9549)"><g><use xlink:href="#Path-2" fill-opacity="1"/></g></g></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 		</div>
 		<div class="popup popup_callback">

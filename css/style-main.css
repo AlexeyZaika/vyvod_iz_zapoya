@@ -955,6 +955,7 @@ textarea.form-popup__input {
 }
 
 .footer__text span {
+  float: left;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -964,6 +965,7 @@ textarea.form-popup__input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 5px 10px 0 0;
   width: 45px;
   height: 45px;
   padding: 5px;
@@ -1222,6 +1224,10 @@ textarea.form-popup__input {
 
 .breadcrumbs__list li:last-child .breadcrumbs__item {
   margin-right: 0;
+}
+
+.breadcrumbs__list li::marker {
+  font-size: 0;
 }
 
 .breadcrumbs__item {
@@ -2056,6 +2062,8 @@ textarea.form-popup__input {
 }
 
 .about__menu {
+  position: relative;
+  z-index: 20;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -2416,17 +2424,35 @@ textarea.form-popup__input {
   display: none;
 }
 
-.contents-about__back-link {
+.contents-about__control {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.contents-about__icon {
   position: relative;
-  display: block;
-  width: 35px;
-  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px;
+  width: 45px;
+  height: 45px;
   background-color: #f9f9f9;
+  border: 1px solid #e1e1e1;
   border-radius: 50%;
 }
 
-.contents-about__back-link::before,
-.contents-about__back-link::after {
+.contents-about__icon_back::before,
+.contents-about__icon_back::after {
   content: '';
   position: absolute;
   width: 10px;
@@ -2435,14 +2461,14 @@ textarea.form-popup__input {
   top: calc(50% - 1px);
 }
 
-.contents-about__back-link::before {
+.contents-about__icon_back::before {
   left: calc(50% - 8px);
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-.contents-about__back-link::after {
+.contents-about__icon_back::after {
   right: calc(50% - 8px);
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -3164,15 +3190,7 @@ textarea.form-popup__input {
   }
 
   .contents-about__title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display: block;
     position: relative;
     padding: 10px 15px 10px 60px;
     color: #fff;
@@ -3194,6 +3212,12 @@ textarea.form-popup__input {
 
   .contents-about__back {
     display: none;
+  }
+
+  .contents-about__control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

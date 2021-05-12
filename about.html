@@ -62,12 +62,32 @@
         <!--breadcrumbs start-->
         <div class="breadcrumbs">
           <div class="_container">
-            <ul class="breadcrumbs__list">
-              <li><a href="main.html" class="breadcrumbs__item">Главная</a></li>
-              <li><a href="services.html" class="breadcrumbs__item">Сервис</a></li>
-              <li><a href="articles.html" class="breadcrumbs__item">О портале</a></li>
-              <li><a href="about.html" class="breadcrumbs__item breadcrumbs__item_active">Политика конфиденциальности</a></li>
-            </ul>
+            <ol class="breadcrumb breadcrumbs__list" itemscope itemtype="">
+              <li itemscope itemprop="itemListElement" itemtype="">
+                <a class="breadcrumbs__item" href="main.html" itemprop="item">
+                  <span itemprop="name">Главная</span>
+                </a>
+                <meta itemprop="position" content="1" />
+              </li>
+              <li itemscope itemprop="itemListElement" itemtype="">
+                <a class="breadcrumbs__item" href="services.html" itemprop="item">
+                  <span itemprop="name">Сервис</span>
+                </a>
+                <meta itemprop="position" content="2" />
+              </li>
+              <li itemscope itemprop="itemListElement" itemtype="">
+                <a class="breadcrumbs__item" href="articles.html" itemprop="item">
+                  <span itemprop="name">О портале</span>
+                </a>
+                <meta itemprop="position" content="3" />
+              </li>
+              <li itemscope itemprop="itemListElement" itemtype="">
+                <a class="breadcrumbs__item breadcrumbs__item_active" href="articles.html" itemprop="item">
+                  <span itemprop="name">Политика конфиденциальности</span>
+                </a>
+                <meta itemprop="position" content="4" />
+              </li>
+            </ol>
           </div>
         </div>
         <!--breadcrumbs end-->
@@ -205,7 +225,25 @@
 
               <div class="about__column about__column_right">
                 <div class="about__contents contents-about">
-                  <h2 class="contents-about__title">Оглавление <a href="#a0" class="contents-about__back-link _goto-block"></a></h2>
+                  <div class="contents-about__control">
+                    <a href="#" class="contents-about__icon">
+                      <svg width="20" version="1.1" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 64 64">
+                        <g>
+                          <path fill="#4A4742" d="m58,10.324h-52c-3.309,0-6,2.691-6,6v32.676c0,3.309 2.691,6 6,6h52c3.309,0 6-2.691 6-6v-32.676c0-3.308-2.691-6-6-6zm-.982,4l-25.018,18.043-25.018-18.043h50.036zm.982,36.676h-52c-1.104,0-2-0.896-2-2v-31.893l26.83,19.35c0.35,0.252 0.76,0.377 1.17,0.377s0.82-0.125 1.17-0.377l26.83-19.35v31.893c0,1.104-0.896,2-2,2z"/>
+                        </g>
+                      </svg>
+                    </a>
+                    <a href="#" class="contents-about__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5.14286 21C4.51429 21 4 20.55 4 20C4 19.45 4.51429 19 5.14286 19H18.8571C19.4857 19 20 19.45 20 20C20 20.55 19.4857 21 18.8571 21H5.14286Z" fill="#4A4742"/>
+                        <rect x="11" y="3" width="2" height="12" rx="1" fill="#4A4742"/>
+                        <rect x="12.1229" y="17.4853" width="2" height="8" rx="1" transform="rotate(-135 12.1229 17.4853)" fill="#4A4742"/>
+                        <rect x="13.4853" y="16.0711" width="2" height="8" rx="1" transform="rotate(135 13.4853 16.0711)" fill="#4A4742"/>
+                      </svg>
+                    </a>
+                    <a href="#a0" class="contents-about__icon contents-about__icon_back _goto-block"></a>
+                  </div>
+                  <h2 class="contents-about__title">Оглавление</h2>
                   <button class="contents-about__button">Оглавление</button>
                   <div class="contents-about__body">
                     <a href="#a1" class="contents-about__title-list _goto-block">Общие положения</a>
@@ -323,7 +361,26 @@
         </ul>
       </div>
 
-      <div class="footer__column"></div>
+      <div class="footer__column">
+        <h2 class="footer__title">Услуги</h2>
+        <ul class="footer__list">
+          <li>
+            <a href="#" class="footer__link">Алкоголизм</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Наркомания</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Капельницы</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Кодировка</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Детоксикация</a>
+          </li>
+        </ul>
+      </div>
 
     </div>
 	</div>
@@ -340,8 +397,7 @@
             <p class="footer__text">Используя сайт, вы соглашаетесь на обработку персональных данных. Если вы не согласны, следует покинуть сайт.</p>
           </div>
         </div>
-        <p class="footer__text">Материалы, представленные на сайте med24.online, носят информационный характер и не могут быть использованы для постановки диагноза, назначения лечения и не заменяют прием врача. Компания не несёт ответственности за возможные негативные последствия, возникшие в результате использования информации, размещенной на сайте. Имеются противопоказания, необходима консультация специалиста.</p>
-        <p class="footer__text footer__text_dflex"><span>14+</span></p>        
+        <p class="footer__text"><span>14+</span>Материалы, представленные на сайте med24.online, носят информационный характер и не могут быть использованы для постановки диагноза, назначения лечения и не заменяют прием врача. Компания не несёт ответственности за возможные негативные последствия, возникшие в результате использования информации, размещенной на сайте. Имеются противопоказания, необходима консультация специалиста.</p>
       </div>
       <div class="footer__contact">
         <h3 class="footer__title">Мы в социальных сетях:</h3>
