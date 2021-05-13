@@ -2513,6 +2513,33 @@ if (aboutButton) {
 	});
 }
 
+//about social show
+const aboutShare = document.querySelector('.contents-about__icon_social');
+if (aboutShare) {
+	const aboutBodyIcon = document.querySelector('.contents-about__social');
+	const aboutIconLinks = aboutBodyIcon.querySelectorAll('.contents-about__social-icon');
+	aboutShare.addEventListener('click', function() {
+		aboutBodyIcon.classList.toggle('_active');
+	});
+
+	for (let i = 0; i < aboutIconLinks.length; i++) {
+		let aboutIconLink = aboutIconLinks[i];
+		aboutIconLink.addEventListener('click', function() {
+			aboutBodyIcon.classList.remove('_active');
+		});
+	}
+
+	/*document.addEventListener('click', function(e) {
+		const target = e.target;
+		const its_aboutBodyIcon = target == aboutBodyIcon || aboutBodyIcon.contains(target);
+		const its_aboutShare = target == aboutShare;
+		const aboutBodyIcon_is_active = aboutBodyIcon.classList.contains('_active');
+		if (!its_aboutBodyIcon && !its_aboutShare && aboutBodyIcon_is_active) {
+			aboutBodyIcon.classList.remove('_active');
+		}
+	});*/
+}
+
 //AJAX
 function pageLoaded() {
 	const input = document.querySelector('.city_choice_field');

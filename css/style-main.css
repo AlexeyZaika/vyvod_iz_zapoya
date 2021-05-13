@@ -977,6 +977,12 @@ textarea.form-popup__input {
   border-radius: 50%;
 }
 
+.footer__text a {
+  margin: 0 5px;
+  color: #0f64a0;
+  background-color: #e4eef8;
+}
+
 .footer__text_dflex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2427,6 +2433,7 @@ textarea.form-popup__input {
 }
 
 .contents-about__control {
+  position: relative;
   display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -2451,6 +2458,14 @@ textarea.form-popup__input {
   background-color: #f9f9f9;
   border: 1px solid #e1e1e1;
   border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.contents-about__icon:hover {
+  border: 1px solid #4a4742;
 }
 
 .contents-about__icon_back::before,
@@ -2475,6 +2490,60 @@ textarea.form-popup__input {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+.contents-about__social {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.contents-about__social._active {
+  top: -50px;
+  z-index: 25;
+}
+
+.contents-about__social._active .contents-about__social-icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contents-about__social-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 5px;
+  width: 45px;
+  height: 45px;
+  background-color: #f9f9f9;
+  border: 1px solid #e1e1e1;
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.contents-about__social-icon:hover {
+  border: 1px solid #4a4742;
 }
 
 @media (min-width: 479.98px) {
@@ -2858,6 +2927,11 @@ textarea.form-popup__input {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 25%;
             flex: 0 0 25%;
+  }
+
+  .footer__text a:hover {
+    background-color: transparent;
+    text-decoration: underline;
   }
 
   .page {
