@@ -2329,13 +2329,39 @@ textarea.form-popup__input {
   opacity: 1;
 }
 
-.contents-about__title-list:hover {
-  text-decoration: underline;
+.contents-about__title-list:hover::before {
+  opacity: 1;
+  background-color: #ccc;
+}
+
+.contents-about__title-list:hover._active::before {
+  background-color: #329cff;
 }
 
 .contents-about__list {
-  margin-bottom: 10px;
+  margin-bottom: 0;
   padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  height: 0;
+  overflow: hidden;
+}
+
+.contents-about__list._active {
+  height: auto;
+  margin-bottom: 10px;
+  overflow: visible;
 }
 
 .contents-about__link {
@@ -2356,7 +2382,7 @@ textarea.form-popup__input {
   left: -34px;
   height: 80%;
   width: 6px;
-  background-color: #ccc;
+  background-color: #329cff;
   opacity: 0;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
@@ -2371,8 +2397,13 @@ textarea.form-popup__input {
   opacity: 1;
 }
 
-.contents-about__link:hover {
-  text-decoration: underline;
+.contents-about__link:hover::before {
+  opacity: 1;
+  background-color: #ccc;
+}
+
+.contents-about__link:hover._active::before {
+  background-color: #329cff;
 }
 
 .contents-about__button {

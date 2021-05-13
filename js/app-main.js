@@ -2434,6 +2434,16 @@ if (link.length > 0) {
 					for (let index = 0; index < current_links.length; index++) {
 						let current_link = current_links[index];
 						current_link.classList.add('_active');
+						if (current_link.parentNode.classList.contains('contents-about__list')) {
+							current_link.parentNode.classList.add('_active');
+						} else {
+							let contentList = document.querySelectorAll('.contents-about__list');
+							for (let i = 0; i < contentList.length; i++) {
+								if (contentList[i].classList.contains('_active')) {
+									contentList[i].classList.remove('_active');
+								}
+							}
+						}
 					}
 				}
 			}
@@ -2444,11 +2454,21 @@ if (link.length > 0) {
 					for (let index = 0; index < current_links.length; index++) {
 						let current_link = current_links[index];
 						current_link.classList.add('_active');
+						if (current_link.parentNode.classList.contains('contents-about__list')) {
+							current_link.parentNode.classList.add('_active');
+						} else {
+							let contentList = document.querySelectorAll('.contents-about__list');
+							for (let i = 0; i < contentList.length; i++) {
+								if (contentList[i].classList.contains('_active')) {
+									contentList[i].classList.remove('_active');
+								}
+							}
+						}
 					}
 				}
 			}
 		}
-	})
+	});
 }
 function _goto(target_block, speed, offset = 0) {
 	let header = '';
