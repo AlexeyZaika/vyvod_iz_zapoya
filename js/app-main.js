@@ -2423,10 +2423,23 @@ if (link.length > 0) {
 		for (let index = 0; index < blocks.length; index++) {
 			let block = blocks[index];
 			let block_item = document.querySelector(`a[name='${block}']`);
-			if (block_item) {
+			let block_next = blocks[index + 1];
+			let block_item_next = document.querySelector(`a[name='${block_next}']`);
+			let header_height = document.querySelector('.header').offsetHeight;
+			if (block_item && block_item_next) {
 				let block_offset = offset(block_item).top;
-				let block_height = block_item.offsetHeight;
-				if ((pageYOffset > block_offset - window.innerHeight / 3) && pageYOffset < (block_offset + block_height) - window.innerHeight / 3) {
+				let block_offset_next = offset(block_item_next).top;
+				if ((pageYOffset > block_offset - header_height - 30) && (pageYOffset <= block_offset_next - header_height - 30)) {
+					let current_links = document.querySelectorAll('._goto-block[href="#' + block + '"]');
+					for (let index = 0; index < current_links.length; index++) {
+						let current_link = current_links[index];
+						current_link.classList.add('_active');
+					}
+				}
+			}
+			if (block_item && block_item_next == null) {
+				let block_offset = offset(block_item).top;
+				if ((pageYOffset > block_offset - header_height - 30)) {
 					let current_links = document.querySelectorAll('._goto-block[href="#' + block + '"]');
 					for (let index = 0; index < current_links.length; index++) {
 						let current_link = current_links[index];

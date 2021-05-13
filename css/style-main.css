@@ -952,9 +952,6 @@ textarea.form-popup__input {
 
 .footer__text {
   margin-bottom: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .footer__text span {
@@ -978,9 +975,7 @@ textarea.form-popup__input {
 }
 
 .footer__text a {
-  margin: 0 5px;
   color: #0f64a0;
-  background-color: #e4eef8;
 }
 
 .footer__text_dflex {
@@ -1026,6 +1021,9 @@ textarea.form-popup__input {
   height: 40px;
   background-color: #4a4742;
   border-radius: 50%;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .footer__icon:first-child {
@@ -1034,6 +1032,10 @@ textarea.form-popup__input {
 
 .footer__icon svg {
   fill: #fff;
+}
+
+.footer__icon:hover {
+  background-color: rgba(74, 71, 66, 0.5);
 }
 
 .page {
@@ -2309,7 +2311,7 @@ textarea.form-popup__input {
 .contents-about__title-list::before {
   content: '';
   position: absolute;
-  left: -20px;
+  left: -14px;
   height: 100%;
   width: 6px;
   background-color: #329cff;
@@ -2327,18 +2329,13 @@ textarea.form-popup__input {
   opacity: 1;
 }
 
-.contents-about__title-list._active + .contents-about__list {
-  height: auto;
-  overflow: visible;
+.contents-about__title-list:hover {
+  text-decoration: underline;
 }
 
 .contents-about__list {
   margin-bottom: 10px;
   padding-left: 20px;
-  overflow: hidden;
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
 }
 
 .contents-about__link {
@@ -2356,8 +2353,8 @@ textarea.form-popup__input {
   content: '';
   position: absolute;
   top: 5px;
-  left: -40px;
-  height: 22px;
+  left: -34px;
+  height: 80%;
   width: 6px;
   background-color: #ccc;
   opacity: 0;
@@ -2372,6 +2369,10 @@ textarea.form-popup__input {
 
 .contents-about__link._active::before {
   opacity: 1;
+}
+
+.contents-about__link:hover {
+  text-decoration: underline;
 }
 
 .contents-about__button {
@@ -2561,12 +2562,6 @@ textarea.form-popup__input {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 112px;
             flex: 0 0 112px;
-  }
-
-  .footer__text_dflex {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 
   .caption__button {
@@ -2930,7 +2925,6 @@ textarea.form-popup__input {
   }
 
   .footer__text a:hover {
-    background-color: transparent;
     text-decoration: underline;
   }
 
