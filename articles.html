@@ -4,7 +4,7 @@
 	<title>Частная наркологическая клиника в вашем городе</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style-main.min.css">
+	<link rel="stylesheet" href="css/style-about.min.css">
 	<link rel="shortcut icon" href="img/logo.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -12,15 +12,22 @@
 		<div class="wrapper">
 			<header class="header">
 	<div class="header__content _container">
-		<a href="main.html" class="header__logo">
-			<picture>
-				<source data-srcset="img/logo.webp" srcset="" type="image/webp">
-				<img data-src="img/logo.png" src="" alt="">
-			</picture>
-		</a>
-		<div class="header__slogan">Наркологичесткая помощь<br> <b>на дому и в клинике</b> {вашем городе}</div>
+		<div class="header__burger burger-header">
+			<div class="burger-header__icon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="burger-header__text">Меню</div>
+		</div>
+
+		<div class="header__logo logo-header">
+			<a href="main.html" class="logo-header__link">med24<img src="img/icons/heart.svg" alt="">online</a>
+			<div class="logo-header__text">Медицинский портал</div>
+		</div>
+		
 		<div class="header__info info-header">
-			<div class="info-header__column info-header__column_1">
+			<div class="info-header__column">
 				<div class="info-header__item info-header__item_shedule">
 					<span class="info-header__icon"></span>
 					<div class="info-header__text">работаем <span>24 / 7</span></div>
@@ -30,7 +37,7 @@
 					<a href="#city" class="info-header__text _popup-link">Выбрать регион</a>
 				</div>
 			</div>
-			<div class="info-header__column info-header__column_2">
+			<div class="info-header__column">
 				<div class="info-header__item info-header__item_phone">
 					<a href="tel:+79581117219" class="info-header__text">{+7(958)111-7-219}</a>
 				</div>
@@ -40,21 +47,214 @@
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="header__menu menu-header">
-		<div class="menu-header__content _container">
-			<div class="menu-header__burger"></div>
-			<ul class="menu-header__list">
-				<li><a href="main.html" class="menu-header__link">Главная</a></li>
-				<li><a href="#" class="menu-header__link">Услуги и цены</a></li>
-				<li><a href="articles.html" class="menu-header__link">Статьи</a></li>
-				<li><a href="#" class="menu-header__link">Отзывы</a></li>
-				<li><a href="services.html" class="menu-header__link">Сервис</a></li>
-				<li><a href="#" class="menu-header__link">Контакты</a></li>
+		<nav class="header__menu menu-header">
+			<ul class="menu-header__list _spollers">
+				<li class="menu-header__item item-menu">
+					<h2 class="item-menu__title">Алкоголизм</h2>
+					<span class="item-menu__icon _spoller" data-max="1023.98"></span>
+					<ul class="item-menu__list">
+						<li class="_spollers">
+							<span class="item-menu__link"><a href="https://www.med24.online/landing/vyvod_iz_zapoya/">Вывод из запоя</a></span>
+							<span class="item-menu__icon _spoller"></span>
+							<ul class="item-menu__submenu">
+								<li><a href="https://www.med24.online/landing/narkolog2/" class="item-menu__sublink">Вывод из запоя в стационаре</a></li>
+								<li><a href="https://www.med24.online/landing/prinuditelnyj-vyvod-iz-zapoya/" class="item-menu__sublink">Принудительный вывод из запоя</a></li>
+								<li><a href="https://www.med24.online/landing/vyvod-iz-zapoya-ambulatorno/" class="item-menu__sublink">Вывод из запоя амбулаторно</a></li>
+							</ul>
+						</li>
+						<li class="_spollers">
+							<span class="item-menu__link"><a href="https://www.med24.online/landing/effektivnoe_lechenie_alkogolizma/">Лечение алкоголизма</a></span>
+							<span class="item-menu__icon _spoller"></span>
+							<ul class="item-menu__submenu">
+								<li><a href="https://www.med24.online/landing/lechenie-alkogolizma-v-statsionare/" class="item-menu__sublink">Лечение алкоголизма в стационаре</a></li>
+								<li><a href="https://www.med24.online/landing/prinuditelnoe-lechenie-ot-alkogolizma/" class="item-menu__sublink">Принудительное лечение от алкоголизма</a></li>
+								<li><a href="https://www.med24.online/landing/anonimnoe-lechenie-alkogolizma/" class="item-menu__sublink">Анонимное лечение алкоголизма</a></li>
+								<li><a href="https://www.med24.online/landing/lechenie-zhenskogo-alkogolizma/" class="item-menu__sublink">Лечение женского алкоголизма</a></li>
+								<li><a href="https://www.med24.online/landing/lechenie-alkogolizma-v-dispansere/" class="item-menu__sublink">Лечение алкоголизма в диспансере</a></li>
+								<li><a href="https://www.med24.online/landing/metod-shichko/" class="item-menu__sublink">Метод Шичко</a></li>
+								<li><a href="https://www.med24.online/landing/lchenie-alkogolizma-doma/" class="item-menu__sublink">Лечение алкоголизма дома</a></li>
+								<li><a href="https://www.med24.online/landing/lechenie-alkogolizma-v-sanatorii/" class="item-menu__sublink">Лечение алкоголизма в санатории</a></li>
+								<li><a href="https://www.med24.online/landing/skoraya-alkogolnaya-pomosch/" class="item-menu__sublink">Скорая алкогольная помощь</a></li>
+								<li><a href="https://www.med24.online/landing/vip-lechenie-alkogolizma/" class="item-menu__sublink">ВИП лечение алкоголизма</a></li>
+								<li><a href="https://www.med24.online/landing/lechenie-alkogolizma-u-muzhchin/" class="item-menu__sublink">Лечение алкоголизма у мужчин</a></li>
+								<li><a href="https://www.med24.online/landing/lechenie-podrostkovogo-alkogolizma/" class="item-menu__sublink">Лечение подросткового алкоголизма</a></li>
+								<li><a href="https://www.med24.online/landing/lechenie-khronicheskogo-alkogolizma/" class="item-menu__sublink">Лечение хронического алкоголизма</a></li>
+								<li><a href="https://www.med24.online/landing/lechenie-alkogolizma-ambulatorno/" class="item-menu__sublink">Лечение алкоголизма амбулаторно</a></li>
+								<li><a href="https://www.med24.online/landing/lechenie-alkogolizma-3-stadii/" class="item-menu__sublink">Лечение алкоголизма 3 стадии</a></li>
+								<li><a href="https://www.med24.online/landing/psikhiatricheskoe-lechenie-alkogolizma/" class="item-menu__sublink">Психиатрическое лечение алкоголизма</a></li>
+							</ul>
+						</li>
+						<li><a href="https://www.med24.online/landing/reabilitatsionnyj-tsentr-alkogolizma/" class="item-menu__link">Реабилитационный центр алкоголизма</a></li>
+						<li><a href="https://www.med24.online/landing/vytrezvlenie/" class="item-menu__link">Вытрезвление</a></li>
+						<li><a href="https://www.med24.online/uslugi/vytrezvitel/" class="item-menu__link">Вытрезвитель</a></li>
+						<li><a href="https://www.med24.online/landing/snyatie-alkogolnoj-intoksikatsii/" class="item-menu__link">Снятие алкогольной интоксикации</a></li>
+						<li><a href="https://www.med24.online/landing/snyatie-pokhmelya-na-domu/" class="item-menu__link">Снятие похмелья на дому</a></li>
+					</ul>
+				</li>
+
+				<li class="menu-header__item item-menu">
+					<h2 class="item-menu__title">Наркомания</h2>
+					<span class="item-menu__icon _spoller" data-max="1023.98"></span>
+					<ul class="item-menu__list">
+						<li><a href="https://www.med24.online/landing/narkolog_na_dom/" class="item-menu__link">Нарколог на дом</a></li>
+						<li class="_spollers">
+							<span class="item-menu__link"><a href="https://www.med24.online/landing/lechenie-narkomanii/">Лечение наркомании</a></span>
+							<span class="item-menu__icon _spoller"></span>
+							<ul class="item-menu__submenu">
+								<li><a href="https://www.med24.online/landing/prinuditelnoe-lechenie-narkozavisimosti/" class="item-menu__sublink">Принудительное лечение наркозависимости</a></li>
+								<li><a href="https://www.med24.online/landing/anonimnoe-lechenie-narkozavisimosti/" class="item-menu__sublink">Анонимное лечение наркозависимости</a></li>
+								<li><a href="https://www.med24.online/landing/gipnoz-ot-narkozavisimosti/" class="item-menu__sublink">Гипноз от наркозависимости</a></li>
+							</ul>
+						</li>
+						<li><a href="https://www.med24.online/landing/narkologicheskaya_pomosch/" class="item-menu__link">Скорая наркологическая помощь</a></li>
+						<li><a href="https://www.med24.online/landing/snyatie_lomki/" class="item-menu__link">Снятие ломки</a></li>
+						<li><a href="https://www.med24.online/landing/reabilitatsionnyj-tsentr-dlya-narkomanov/" class="item-menu__link">Реабилитационный центр для наркоманов</a></li>
+						<li><a href="https://www.med24.online/landing/reabilitatsiya-narkomanov/" class="item-menu__link">Реабилитация наркоманов</a></li>
+						<li><a href="https://www.med24.online/landing/narkologicheskaya-pomosch-anonimno/" class="item-menu__link">Наркологическая помощь анонимно</a></li>
+						<li><a href="https://www.med24.online/landing/kruglosutochnaya-narkologicheskaya-pomosch/" class="item-menu__link">Круглосуточная наркологическая помощь</a></li>
+					</ul>
+				</li>
+
+				<li class="menu-header__item item-menu">
+					<h2 class="item-menu__title"><a href="https://www.med24.online/landing/kodirovka_ot_alkogolya/">Кодирование от алкоголизма</a></h2>
+					<span class="item-menu__icon _spoller data-max="1023.98""></span>
+					<ul class="item-menu__list">
+						<li><a href="https://www.med24.online/landing/kodirovanie_metodom_torpedo/" class="item-menu__link">Торпеда от алкоголизма</a></li>
+						<li><a href="https://www.med24.online/landing/kodirovanie_po_metodu_dovzhenko/" class="item-menu__link">Кодирование по методу Довженко</a></li>
+						<li><a href="https://www.med24.online/landing/vshivanie_ot_alkogolizma/" class="item-menu__link">Вшивание ампулы</a></li>
+						<li><a href="https://www.med24.online/landing/kodirovanie_ukolom/" class="item-menu__link">Кодирование от алкоголизма уколом</a></li>
+						<li><a href="https://www.med24.online/landing/kodirovka-ot-alkogolya-na-domu/" class="item-menu__link">Кодировка от алкоголя на дому</a></li>
+						<li><a href="https://www.med24.online/landing/kodirovanie_gipnozom/" class="item-menu__link">Кодирование гипнозом</a></li>
+						<li><a href="https://www.med24.online/landing/vshivanie-esperal/" class="item-menu__link">Вшивание Эспераль</a></li>
+						<li><a href="https://www.med24.online/landing/kodirovanie_lazerom/" class="item-menu__link">Лазерное кодирование</a></li>
+						<li><a href="https://www.med24.online/landing/kodirovanie-vivitrol/" class="item-menu__link">Кодирование Вивитрол</a></li>
+						<li><a href="https://www.med24.online/landing/kodirovanie-disulfiram/" class="item-menu__link">Кодирование Дисульфирам</a></li>
+						<li><a href="https://www.med24.online/landing/kodirovanie-sit/" class="item-menu__link">Кодирование SIT</a></li>
+						<li><a href="https://www.med24.online/landing/kodirovanie-akvilong/" class="item-menu__link">Кодирование Аквилонг</a></li>
+						<li><a href="https://www.med24.online/landing/kodirovanie-naltrekson/" class="item-menu__link">Кодирование Налтрексон</a></li>
+						<li><a href="https://www.med24.online/landing/igloukalyvanie-ot-alkogolizma/" class="item-menu__link">Иглоукалывание от алкоголизма</a></li>
+					</ul>
+				</li>
+
+				<li class="menu-header__item item-menu">
+					<h2 class="item-menu__title"><a href="https://www.med24.online/landing/kapelnitsy/">Капельницы</a></h2>
+					<span class="item-menu__icon _spoller data-max="1023.98""></span>
+					<ul class="item-menu__list">
+						<li><a href="https://www.med24.online/landing/medsestra_kapelniczy_na_dom/" class="item-menu__link">На дому</a></li>
+						<li class="_spollers">
+							<span class="item-menu__link"><a href="https://www.med24.online/landing/kapelnicza_ot_alkogolya/">Капельница от запоя</a></span>
+							<span class="item-menu__icon _spoller"></span>
+							<ul class="item-menu__submenu">
+								<li><a href="https://www.med24.online/landing/kapelnitsa-ot-zapoya-v-klinike/" class="item-menu__sublink">Капельница от запоя в клинике</a></li>
+							</ul>
+						</li>
+						<li><a href="https://www.med24.online/landing/prokapatsya/" class="item-menu__link">Прокапаться</a></li>
+						<li><a href="https://www.med24.online/landing/kapelnitsy-dlya-detoksikatsii/" class="item-menu__link">Капельницы для детоксикации</a></li>
+						<li><a href="https://www.med24.online/landing/kapelnicza_narkotikov/" class="item-menu__link">Капельница от наркотиков</a></li>
+						<li><a href="https://www.med24.online/landing/kapelnicza_ot_pohmelya/" class="item-menu__link">Капельница от похмелья</a></li>
+						<li><a href="https://www.med24.online/landing/vitaminnye-kapelnitsy/" class="item-menu__link">Витаминные капельницы</a></li>
+						<li><a href="https://www.med24.online/landing/kapelnitsa-pri-alkogolnoj-intoksikatsii/" class="item-menu__link">Капельница при алкогольной интоксикации</a></li>
+					</ul>
+				</li>
+
+				<li class="menu-header__item item-menu">
+					<h2 class="item-menu__title"><a href="https://www.med24.online/landing/detoksikatsiya/">Детоксикация</a></h2>
+					<span class="item-menu__icon _spoller data-max="1023.98""></span>
+					<ul class="item-menu__list">
+						<li><a href="https://www.med24.online/landing/detoksikacziya_ot_narkotikov/" class="item-menu__link">От наркотиков</a></li>
+						<li><a href="https://www.med24.online/landing/ubod/" class="item-menu__link">УБОД</a></li>
+						<li><a href="https://www.med24.online/landing/detoksikacziya_alkogolya/" class="item-menu__link">От алкоголя</a></li>
+						<li><a href="https://www.med24.online/landing/detoksikatsiya-na-domu/" class="item-menu__link">Детоксикация на дому</a></li>
+					</ul>
+				</li>
 			</ul>
-			<a href="#consultation" class="menu-header__button btn _popup-link"><span>Консультация</span></a>
-		</div>
+			
+			<div class="menu-header__footer footer-menu">
+				<div class="footer-menu__column">
+					<a href="#" class="footer-menu__link">
+						<span>Найти медицинское учреждение</span>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 40 40" version="1.1">
+							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+									<g transform="translate(-300.000000, -200.000000)">
+											<g transform="translate(300.000000, 200.000000)">
+													<g transform="translate(7.000000, 7.000000)">
+															<polyline stroke="#B20C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" points="8.27581632 12.4908201 3.77265369 12.4908201 0.0769929324 25.8567931 25.9466182 25.8567931 22.2509575 12.4908201 17.7477948 12.4908201"/>
+															<path d="M8.27581632,12.4908201 C7.29092273,10.1794614 6.54439926,8.01608323 6.54439926,6.7625459 C6.54439926,3.07162791 9.43994946,0.0795593635 13.0118056,0.0795593635 C16.5836617,0.0795593635 19.4792119,3.07162791 19.4792119,6.7625459 C19.4792119,8.01608323 18.7326884,10.1794614 17.7477948,12.4908201 C15.8315947,16.9856059 13.0118056,22.0379437 13.0118056,22.0379437 C13.0118056,22.0379437 10.1920164,16.9856059 8.27581632,12.4908201 L8.27581632,12.4908201 Z" stroke="#B20C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+															<path d="M14.2255818,4.18897972 C13.4496149,4.34809845 12.8083365,5.07166993 12.4977487,6.00996794 C12.4759707,6.07596033 12.4186778,6.16439685 12.3432925,6.19287072 L11.9218044,6.33524011 C11.8209555,6.36471895 11.7268075,6.26623283 11.6963183,6.19287072 C11.3823801,5.40632173 10.8767954,4.89178202 10.286109,5.01572713 C9.72390152,5.13732734 9.06888627,5.80897586 9.27192424,6.86217434 C9.49741031,8.03730801 11.7653378,10.1708389 12.238423,10.1835684 C12.7292656,10.193283 15.4565415,7.85206031 15.8760193,5.98752382 C16.2097252,4.4914728 15.053816,4.01143672 14.2255818,4.18897972 L14.2255818,4.18897972 Z" fill="#B20C1C"/>
+													</g>
+											</g>
+									</g>
+							</g>
+						</svg>
+					</a>
+				</div>
+				<div class="footer-menu__column">
+					<a href="#" class="footer-menu__link">
+						<span>Медицинские услуги</span>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 40 40" version="1.1">
+							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+									<g transform="translate(-100.000000, -300.000000)" stroke="#B20C1C" stroke-width="1.5">
+											<g transform="translate(100.000000, 300.000000)">
+													<g transform="translate(2.000000, 11.000000)">
+															<path d="M0.841591837,12.2547946 C0.389020408,12.855262 0.502897959,13.7968709 0.923877551,14.4243666 C1.34559184,15.0518624 2.00167347,15.4295286 2.64893878,15.7472942 C5.51791837,17.1534983 8.65946939,17.7861075 11.7944082,17.9935683 C14.9286122,18.201029 18.0723673,17.9950293 21.2073061,17.7890295 C23.7089388,17.624668 26.2083673,17.8102139 28.7136735,17.875228 C30.6238776,17.9241712 32.5862449,17.9643485 34.3796327,17.2411578 C34.9953061,16.9920588 35.6462449,16.5691018 35.7880408,15.8641735 C35.8982449,15.3148408 35.6638776,14.7625861 35.494898,14.2315158 C35.2032245,13.3132828 35.0981633,12.3373406 35.0224898,11.3687034 C34.820449,8.7864014 34.7778367,6.05215627 33.5391429,3.84898146 C33.3385714,3.49249959 33.092449,3.1411312 32.7442041,2.97238671 C32.2240408,2.72109621 31.5980816,2.94828035 31.1646122,3.35370542 C30.7318776,3.7591305 30.4438776,4.31430717 30.133102,4.83880303 C29.8230612,5.3625684 29.4623265,5.88487277 28.9517143,6.15807813 C28.4058367,6.45027638 27.7541633,6.41740408 27.1766939,6.21286531 C26.5999592,6.00832653 26.0805306,5.6467312 25.5691837,5.28805784 C24.9836327,4.87898029 24.3988163,4.46917224 23.8132653,4.06009469 C22.9940816,3.48665563 22.9051837,2.20609679 22.390898,1.29955172 C22.2439592,1.04022577 22.0845306,0.768481399 21.8354694,0.635531195 C21.349102,0.374744257 20.7907347,0.746566531 20.3565306,1.10085691 C19.5322041,1.77510437 18.7064082,2.44716035 17.8798776,3.11848583 C14.3584898,5.97764571 10.6945714,8.87844385 6.43408163,9.97345679 C5.26959184,10.27296 4.0382449,10.3956833 2.85538776,10.5907256 C2.42191837,10.6623142 1.97963265,10.7368247 1.59097959,10.9596259 C1.20159184,11.1816966 0.884938776,11.774859 0.841591837,12.2547946 L0.841591837,12.2547946 Z"/>
+															<path d="M1.11269388,12.2057053 C4.0984898,13.4877252 8.69620408,14.9253405 11.989102,14.7996953 C14.2335918,14.7134968 16.4832245,14.5096885 18.6880408,14.0436323 C22.1624082,13.3087537 25.5082041,12.7988678 28.9642041,12.9478889 C31.2806939,13.0479668 33.0138367,13.1575411 35.0415918,13.4935691"/>
+															<path d="M26.1974939,12.7762224 C28.0459837,11.0171889 30.4594531,9.8052967 32.9155347,9.64239617 C33.2329224,9.6212118 34.3165959,9.59564445 34.6347184,9.61682883"/>
+															<path d="M19.9469388,4.93084548 C19.9469388,5.62262484 20.4729796,6.18291499 21.122449,6.18291499"/>
+													</g>
+											</g>
+									</g>
+							</g>
+						</svg>
+					</a>
+				</div>
+				<div class="footer-menu__column">
+					<a href="#" class="footer-menu__link">
+						<span>Медицинское руководство</span>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 40 40" version="1.1">
+							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+									<g transform="translate(-100.000000, -400.000000)">
+											<g transform="translate(100.000000, 400.000000)">
+													<g transform="translate(4.000000, 10.000000)">
+															<path d="M31.1067774,16.4150943 C27.5245887,17.7512453 24.3342491,14.338717 20.0716075,14.338717 C18.2005132,14.338717 16.4211925,16.0353208 16.0728151,16.2623396 C16.0643623,16.277434 16.0547019,16.2943396 16.0468528,16.309434 L16.0076075,16.309434 C16.000966,16.2973585 15.9925132,16.2822642 15.9858717,16.2701887 C15.6755321,16.066717 13.8738717,14.338717 11.9756075,14.338717 C7.67130566,14.338717 4.43809811,17.8442264 0.81485283,16.4150943" stroke="#B20C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+															<path d="M0.81509434,16.4150943 L0.0978113208,19.3295094 C5.16226415,21.1021887 6.89388679,18.3489811 11.5290566,18.3489811 C13.4442264,18.3489811 15.1710189,19.8783396 15.1710189,19.8783396 L16.8754717,19.8783396 C16.8754717,19.8783396 18.6028679,18.3489811 20.5180377,18.3489811 C25.1393208,18.3489811 26.8751698,21.0858868 31.9046038,19.344 L31.1070189,16.4150943" stroke="#B20C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+															<path d="M16.1330717,0.748498113 C11.0172981,-1.49029434 10.1985811,1.99649811 4.29669434,2.10578113 L3.62650566,4.03302642 L0.000241509434,14.4577811 C0.457298113,14.5127245 0.896241509,14.5489509 1.31646792,14.5652528 C5.94680755,14.754234 8.43797736,12.239517 11.8293736,12.239517 C14.412317,12.239517 15.5148075,14.7826113 15.9857509,15.6399698 M16.0726943,15.6327245 C16.5460528,14.7711396 17.6491472,12.239517 20.2248453,12.239517 C23.6071849,12.239517 26.1635623,14.7246491 30.6809962,14.5652528 C31.1024302,14.551366 31.5413736,14.5181585 32.0002415,14.4650264 L28.3709585,4.03302642 L27.700166,2.10396981 C21.8145811,1.97234717 21.6231849,-1.52893585 16.4186566,0.799215094" stroke="#B20C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+															<path d="M17.917766,5.48950943 C17.917766,5.48950943 17.3870491,5.53781132 16.616634,5.62716981 L16.6727849,4.38339623 C17.4329358,4.2789434 17.8736906,4.2010566 17.8736906,4.2010566 C18.3645585,4.11049057 18.4985962,3.84664151 18.4871245,3.55139623 C18.4714264,3.13962264 18.1387472,2.94641509 17.749917,2.94641509 C17.749917,2.94641509 13.2198038,2.98867925 12.7506717,2.90354717 C12.2821434,2.81841509 12.264634,2.76709434 12.264634,2.76709434 C12.264634,2.76709434 12.9795019,2.57811321 12.9541434,2.58656604 C12.9287849,2.59501887 11.829917,2.44286792 11.7882566,2.33056604 C11.7695396,2.27984906 12.5671245,1.75879245 12.9601811,1.69781132 C13.4915019,1.61509434 14.1961057,1.98701887 14.7153509,1.9610566 C15.2339925,1.93569811 18.0771623,1.73162264 18.4955774,1.7485283 L18.5040302,1.7485283 C19.4356528,1.75939623 20.245917,2.44226415 20.1958038,3.50671698 C20.1505208,4.46732075 19.6705208,5.27335849 17.917766,5.48950943 L17.917766,5.48950943 Z M15.5841811,3.18188679 L16.3539925,3.18188679 L16.2428981,6.9874717 L15.6753509,6.89630189 L15.5841811,3.18188679 Z M17.7420679,10.157283 C17.7420679,10.157283 17.1298415,10.1639245 16.4892377,10.1723774 L16.5115774,9.25645283 C16.981917,9.23169811 17.2361057,9.21116981 17.269917,9.20875472 C17.3822189,9.20030189 17.5379925,9.08558491 17.5379925,8.93524528 C17.5379925,8.78430189 17.4317283,8.67803774 17.269917,8.6605283 C16.7814642,8.60860377 14.037917,8.04528302 14.037917,8.04528302 C13.1111245,7.84060377 12.5248604,7.35275472 12.5248604,6.50022642 C12.5248604,5.0674717 13.7197283,4.80543396 13.9207849,4.76015094 C14.0149736,4.73841509 14.5330113,4.6285283 15.3070491,4.52045283 L15.3408604,5.78716981 C14.8892377,5.83849057 14.7515774,5.85479245 14.7244075,5.85479245 C14.3561057,5.90611321 14.1327094,6.112 14.1327094,6.41449057 C14.1327094,6.71637736 14.3005585,6.84739623 14.6350491,6.90415094 C14.6350491,6.90415094 15.952483,7.19033962 17.437766,7.44150943 C17.8622189,7.53207547 19.0232755,7.73735849 19.0148226,8.8754717 C19.0093887,9.52150943 18.6211623,10.1331321 17.7420679,10.157283 L17.7420679,10.157283 Z M15.7127849,8.68286792 L16.2127094,8.76256604 L16.157766,10.7085283 L15.7641057,10.6288302 L15.7127849,8.68286792 Z M16.9716528,12.5107925 L16.221766,12.8398491 L16.2428981,12.0700377 C16.2428981,12.0700377 16.368483,12.018717 16.3545962,11.9058113 C16.3437283,11.8152453 16.304483,11.7802264 16.1921811,11.7403774 L14.7358792,11.4246038 C14.0650868,11.2875472 13.7305962,10.893283 13.7305962,10.3806792 C13.7305962,9.84815094 14.0904453,9.42188679 14.6265962,9.34641509 C14.6265962,9.34641509 14.9484075,9.3234717 15.4628226,9.29750943 L15.496634,10.1862642 C15.3903698,10.1868679 15.4314264,10.189283 15.4163321,10.189283 C14.9302943,10.2092075 14.9478038,10.3601509 14.9478038,10.4458868 C14.9478038,10.5376604 15.0480302,10.5750943 15.120483,10.6197736 L16.8877283,11.1076226 C17.3677283,11.2440755 17.4824453,11.578566 17.4824453,11.7832453 C17.4824453,11.9118491 17.4739925,12.2710943 16.9716528,12.5107925 L16.9716528,12.5107925 Z M15.7852377,11.8442264 L16.136634,11.9070189 L16.0907472,13.4297358 L15.8232755,13.2335094 L15.7852377,11.8442264 Z M16.0828981,14.7109434 C16.048483,14.5606038 15.2116528,13.7135094 15.2116528,13.7135094 C15.024483,13.5637736 14.9514264,13.3578868 14.9514264,13.1248302 C14.9514264,12.8579623 15.0975396,12.6635472 15.2961811,12.5675472 C15.2961811,12.5675472 15.5721057,12.421434 15.6844075,12.3616604 L15.7182189,13.1882264 C15.7182189,13.3095849 15.8033509,13.3717736 15.8975396,13.4412075 C16.4771623,13.869283 16.1155019,14.8606792 16.0828981,14.7109434 L16.0828981,14.7109434 Z" fill="#B20C1C"/>
+													</g>
+											</g>
+									</g>
+							</g>
+						</svg>
+					</a>
+				</div>
+				<div class="footer-menu__column">
+					<a href="#" class="footer-menu__link">
+						<span>Данные пациента</span>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+									<g transform="translate(-490.000000, -365.000000)">
+											<g transform="translate(490.000000, 365.000000)">
+													<g transform="translate(1.000000, 1.000000)">
+															<g transform="translate(0.000000, 16.076923)"/>
+															<g transform="translate(8.066355, 0.000000)"/>
+															<polygon stroke="#B20C1C" stroke-width="1.5" points="0 21.7621667 5 21.7621667 5 16.7621667 0 16.7621667"/>
+															<polygon stroke="#B20C1C" stroke-width="1.5" points="0 13.3810833 5 13.3810833 5 8.38108333 0 8.38108333"/>
+															<polygon stroke="#B20C1C" stroke-width="1.5" points="0 5 5 5 5 0 0 0"/>
+															<polygon stroke="#B20C1C" stroke-width="1.5" points="8.19452089 21.7621667 13.1945209 21.7621667 13.1945209 16.7621667 8.19452089 16.7621667"/>
+															<polygon stroke="#B20C1C" stroke-width="1.5" points="8.19452089 13.3810833 13.1945209 13.3810833 13.1945209 8.38108333 8.19452089 8.38108333"/>
+															<polygon stroke="#B20C1C" stroke-width="1.5" points="8.19452089 5 13.1945209 5 13.1945209 0 8.19452089 0"/>
+															<polygon stroke="#B20C1C" stroke-width="1.5" points="16.3890418 21.7621667 21.3890418 21.7621667 21.3890418 16.7621667 16.3890418 16.7621667"/>
+															<polygon stroke="#B20C1C" stroke-width="1.5" points="16.3890418 13.3810833 21.3890418 13.3810833 21.3890418 8.38108333 16.3890418 8.38108333"/>
+															<polygon stroke="#B20C1C" stroke-width="1.5" points="16.3890418 5 21.3890418 5 21.3890418 0 16.3890418 0"/>
+													</g>
+											</g>
+									</g>
+							</g>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</nav>
 	</div>
 </header>
 			<main class="page">
@@ -298,6 +498,7 @@
         </div>
       </div>
     </div>
+    <div class="footer__copyright">© 2011-2021, ООО «Семейный доктор»</div>
   </div>
 </footer>
 		</div>
@@ -401,46 +602,6 @@
 		</div>
 	</div>
 </div>
-
-<div class="popup popup_consultation">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close popup__close_white"></div>
-			<h2 class="popup__title">Запись на консультацию</h2>
-			<form action="#" name="consultation" class="popup__form form-popup">
-				<div class="form-popup__line">
-          <label class="form-popup__label">Представьтесь пожалуйста</label>
-					<input class="form-popup__input _req" type="text" name="name" data-value="Ваше имя" autocomplete="off">
-				</div>
-				<div class="form-popup__line">
-          <label class="form-popup__label">Ваш телефон</label>
-					<input class="form-popup__input _phone _req" type="text" name="tell" data-value="+7(___)___-__-__" autocomplete="off">
-				</div>
-				<button class="form-popup__button btn" type="submit"><span>Отправить</span></button>
-			</form>
-		</div>
-	</div>
-</div>
-
-<div class="popup popup_call">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close popup__close_white"></div>
-			<h2 class="popup__title">Вызвать врача</h2>
-			<form action="#" name="call" class="popup__form form-popup">
-				<div class="form-popup__line">
-          <label class="form-popup__label">Представьтесь пожалуйста</label>
-					<input class="form-popup__input _req" type="text" name="name" data-value="Ваше имя" autocomplete="off">
-				</div>
-				<div class="form-popup__line">
-          <label class="form-popup__label">Ваш телефон</label>
-					<input class="form-popup__input _phone _req" type="text" name="tell" data-value="+7(___)___-__-__" autocomplete="off">
-				</div>
-				<button class="form-popup__button btn" type="submit"><span>Отправить</span></button>
-			</form>
-		</div>
-	</div>
-</div>
-		<script defer src="js/app-main.min.js"></script>
+		<script defer src="js/app-about.min.js"></script>
 	</body>
 </html>
