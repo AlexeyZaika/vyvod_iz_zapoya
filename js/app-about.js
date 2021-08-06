@@ -2570,7 +2570,7 @@ function pageLoaded() {
 	let blockCity = document.querySelector('.form-popup__block');
 
 	function sendRequest() {
-		const request = new Request(`https://www.devel.med24.online/ajax/get_city.php?q=${input.value}`);
+		const request = new Request(`https://www.med24.online/ajax/get_city.php?q=${input.value}`);
 
 		const options = {
 			method: 'GET',

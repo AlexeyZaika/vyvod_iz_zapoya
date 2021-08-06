@@ -460,6 +460,7 @@ body._lock {
 }
 
 .item-menu__link {
+  padding-right: 10px;
   font-size: 16px;
   color: #000;
 }
@@ -473,6 +474,9 @@ body._lock {
 }
 
 .item-menu__sublink {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   display: block;
   padding: 15px 0 0 25px;
   font-size: 14px;
@@ -522,6 +526,7 @@ body._lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   color: #000;
 }
 
@@ -1127,10 +1132,6 @@ textarea.form-popup__input {
 
 .footer__icon:hover {
   background-color: rgba(74, 71, 66, 0.5);
-}
-
-.footer__copyright {
-  text-align: center;
 }
 
 .page {
@@ -2644,7 +2645,7 @@ textarea.form-popup__input {
 
 .contents-about__social._active {
   top: -50px;
-  z-index: 25;
+  z-index: 27;
 }
 
 .contents-about__social._active .contents-about__social-icon {
@@ -3013,7 +3014,6 @@ textarea.form-popup__input {
 
   .item-menu__icon {
     display: none;
-    right: 0;
   }
 
   .item-menu__icon:hover::before,
@@ -3039,11 +3039,21 @@ textarea.form-popup__input {
   }
 
   .item-menu__list > li {
-    padding: 0 20px 10px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 40px 10px 15px;
   }
 
   .item-menu__list > li .item-menu__icon {
-    display: block;
+    display: inline-block;
+    position: relative;
+    right: 0;
   }
 
   .item-menu__link {
@@ -3429,7 +3439,7 @@ textarea.form-popup__input {
     position: fixed;
     z-index: 20;
     right: auto;
-    top: 100px;
+    top: 150px;
     background-color: #fff;
     width: 300px;
   }
