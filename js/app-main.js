@@ -2017,7 +2017,7 @@ function inputs_init(inputs) {
 						}
 					}).mask(input);
 				}
-				if (input.classList.contains('_text')) {
+				/*if (input.classList.contains('_text')) {
 					input.classList.add('_mask');
 					Inputmask("*{1,}", {
 						"placeholder": '',
@@ -2027,7 +2027,7 @@ function inputs_init(inputs) {
 							input_clear_mask(input, input_g_value);
 						}
 					}).mask(input);
-				}
+				}*/
 				form_remove_error(input);
 			});
 			input.addEventListener('blur', function (e) {
@@ -2335,7 +2335,7 @@ let popupCity = document.querySelector('.popup_city');
 
 for (let i = 0; i < popupCityCloses.length; i++) {
 	let popupCityClose = popupCityCloses[i];
-	let inputSearch = document.querySelector('#city_choice_field');
+	let inputSearch = document.querySelector('.city_choice_field');
 
 	popupCityClose.addEventListener('click', function(e) {
 		if (popupCity.classList.contains('_active')) {
@@ -2371,9 +2371,10 @@ function pageLoaded() {
 				return response.json();
 			})
 			.then(data => {
-				console.log(data);
 				writeListCity(buildListCity(data));
 			})
+		} else {
+			blockCity.classList.remove('_active');
 		}
   }
 

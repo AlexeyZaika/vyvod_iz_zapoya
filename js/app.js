@@ -2059,7 +2059,7 @@ function inputs_init(inputs) {
 						}
 					}).mask(input);
 				}
-				if (input.classList.contains('_text')) {
+				/*if (input.classList.contains('_text')) {
 					input.classList.add('_mask');
 					Inputmask("*{1,}", {
 						"placeholder": '',
@@ -2069,7 +2069,7 @@ function inputs_init(inputs) {
 							input_clear_mask(input, input_g_value);
 						}
 					}).mask(input);
-				}
+				}*/
 				form_remove_error(input);
 			});
 			input.addEventListener('blur', function (e) {
@@ -2445,8 +2445,6 @@ function scroll_scroll() {
 	let src_value = currentScroll = pageYOffset;
 
 	let header = document.querySelector('.header');
-	/*let styleHeader = getComputedStyle(header);
-	let heightHeader = parseInt(styleHeader.height);*/
 	
 	if (header !== null) {
 		if (src_value > 0) {
@@ -2454,24 +2452,19 @@ function scroll_scroll() {
 		} else {
 			header.classList.remove('_scroll');
 		}
-		/*if (src_value > scrollDirection && src_value > heightHeader + 200) {
-			header.classList.add('_disable');
-		} else {
-			header.classList.remove('_disable');
-		}
-		scrollDirection = src_value <= 0 ? 0 : src_value;*/
 	}
 }
 setTimeout(function () {
 	scroll_scroll();
 }, 800);
+
 //popu-city-close
 let popupCityCloses = document.querySelectorAll('.popup__link');
 let popupCity = document.querySelector('.popup_city');
 
 for (let i = 0; i < popupCityCloses.length; i++) {
 	let popupCityClose = popupCityCloses[i];
-	let inputSearch = document.querySelector('#city_choice_field');
+	let inputSearch = document.querySelector('.city_choice_field');
 
 	popupCityClose.addEventListener('click', function(e) {
 		if (popupCity.classList.contains('_active')) {
@@ -2491,7 +2484,7 @@ for (let i = 0; i < popupCityCloses.length; i++) {
 //AJAX
 function pageLoaded() {
 	const input = document.querySelector('.city_choice_field');
-	let blockCity = document.querySelector('.form-popup__block');
+	const blockCity = document.querySelector('.form-popup__block');
 
 	function sendRequest() {
 		const request = new Request(`https://www.devel.med24.online/ajax/get_city.php?q=${input.value}`);
@@ -2507,9 +2500,10 @@ function pageLoaded() {
 				return response.json();
 			})
 			.then(data => {
-				console.log(data);
 				writeListCity(buildListCity(data));
 			})
+		} else {
+			blockCity.classList.remove('_active');
 		}
   }
 
@@ -2531,7 +2525,7 @@ function pageLoaded() {
 		blockCity.innerHTML = message;
 	}
 
-	input.addEventListener("input", sendRequest);
+	input.addEventListener('input', sendRequest);
 }
 
 document.addEventListener('DOMContentLoaded', pageLoaded);
