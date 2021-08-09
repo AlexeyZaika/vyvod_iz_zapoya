@@ -2073,14 +2073,21 @@ function _is_hidden(el) {
 let unlock = true;
 
 let iconMenu = document.querySelector(".burger-header");
+let textMenu = document.querySelector(".burger-header__text");
 if (iconMenu != null) {
-	let delay = 500;
+	let delay = 300;
 	let menuBody = document.querySelector(".menu-header");
 	iconMenu.addEventListener("click", function () {
-		if (unlock) {
+		if (!iconMenu.classList.contains("_active")) {
 			body_lock(delay);
-			iconMenu.classList.toggle("_active");
-			menuBody.classList.toggle("_active");
+			iconMenu.classList.add("_active");
+			menuBody.classList.add("_active");
+			textMenu.innerHTML = "Скрыть меню";
+		} else {
+			body_lock(delay);
+			iconMenu.classList.remove("_active");
+			menuBody.classList.remove("_active");
+			textMenu.innerHTML = "Меню";
 		}
 	});
 };
