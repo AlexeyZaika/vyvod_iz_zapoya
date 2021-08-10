@@ -2806,6 +2806,7 @@ textarea.form-popup__input {
   }
 
   .footer__title_empty {
+    visibility: hidden;
     height: 22px;
     font-size: 20px;
     margin-bottom: 20px;
