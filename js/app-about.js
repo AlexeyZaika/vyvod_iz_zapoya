@@ -2072,25 +2072,53 @@ function _is_hidden(el) {
 //Menu
 let unlock = true;
 
-let iconMenu = document.querySelector(".burger-header");
-let textMenu = document.querySelector(".burger-header__text");
+const iconMenu = document.querySelector(".burger-header");
+
 if (iconMenu != null) {
-	let delay = 300;
-	let menuBody = document.querySelector(".menu-header");
+	let delay = 500;
+	const textMenu = document.querySelector(".burger-header__text");
+	const menuBody = document.querySelector(".menu-header");
+	const headerSearch = document.querySelector(".header__search");
+	const infoHeader = document.querySelector(".info-header");
 	iconMenu.addEventListener("click", function () {
 		if (!iconMenu.classList.contains("_active")) {
 			body_lock(delay);
 			iconMenu.classList.add("_active");
 			menuBody.classList.add("_active");
+			headerSearch.classList.add("_active");
+			infoHeader.classList.add("_active");
 			textMenu.innerHTML = "Скрыть меню";
 		} else {
 			body_lock(delay);
 			iconMenu.classList.remove("_active");
 			menuBody.classList.remove("_active");
+			headerSearch.classList.remove("_active");
+			infoHeader.classList.remove("_active");
 			textMenu.innerHTML = "Меню";
 		}
 	});
 };
+
+function socialShow() {
+	const iconSocial = document.querySelector(".mobile-menu__link_social");
+	const bodySocial = document.querySelector(".mobile-menu__socials");
+	iconSocial.addEventListener("click", function (e) {
+		e.stopPropagation();
+		bodySocial.classList.toggle("_active");
+	});
+
+	document.addEventListener('click', function(e) {
+		const target = e.target;
+		const its_bodySocial = target == bodySocial || bodySocial.contains(target);
+		const its_iconSocial = target == iconSocial;
+		const bodySocial_is_active = bodySocial.classList.contains('_active');
+		if (!its_bodySocial && !its_iconSocial && bodySocial_is_active) {
+			bodySocial.classList.remove('_active');
+		}
+	});
+}
+
+document.addEventListener('DOMContentLoaded', socialShow);
 //Spollers
 let spollers = document.querySelectorAll("._spoller");
 let spollersGo = true;
