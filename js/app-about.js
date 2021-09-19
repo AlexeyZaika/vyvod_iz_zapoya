@@ -2685,6 +2685,19 @@ function showItemDesctopMenu() {
 			iconDesctopMenu.parentNode.classList.toggle('_active');
 		})
 	}
+
+	document.addEventListener('click', function(e) {
+		for (let i = 0; i < iconsDesctopMenu.length; i++) {
+			let iconDesctopMenu = iconsDesctopMenu[i];
+			const target = e.target;
+			const its_elemDesctopMenu = target == iconDesctopMenu.parentNode || iconDesctopMenu.parentNode.contains(target);
+			const its_iconDesctopMenu = target == iconDesctopMenu;
+			const elemDesctopMenu_is_active = iconDesctopMenu.parentNode.classList.contains('_active');
+			if (!its_elemDesctopMenu && !its_iconDesctopMenu && elemDesctopMenu_is_active) {
+				iconDesctopMenu.parentNode.classList.remove('_active');
+			}
+		}
+	});
 }
 
 document.addEventListener('DOMContentLoaded', showItemDesctopMenu);

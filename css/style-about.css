@@ -792,7 +792,7 @@ body._lock {
 .desctop-menu {
   display: none;
   position: fixed;
-  left: -250px;
+  right: -250px;
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -815,10 +815,6 @@ body._lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -832,9 +828,9 @@ body._lock {
 }
 
 .desctop-menu__list li._active {
-  -webkit-transform: translateX(250px);
-      -ms-transform: translateX(250px);
-          transform: translateX(250px);
+  -webkit-transform: translateX(-250px);
+      -ms-transform: translateX(-250px);
+          transform: translateX(-250px);
 }
 
 .desctop-menu__list li::before {
@@ -842,13 +838,13 @@ body._lock {
   display: block;
   width: 0;
   height: 0;
-  border-left: 8px solid #fff;
-  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid #fff;
   border-top: 29px solid transparent;
   border-bottom: 29px solid #fff;
   position: absolute;
   top: 0;
-  left: 100%;
+  right: 100%;
 }
 
 .desctop-menu__icon {
