@@ -2670,6 +2670,25 @@ function aboutLoaded() {
 
 document.addEventListener('DOMContentLoaded', aboutLoaded);
 
+function showItemDesctopMenu() {
+	let iconsDesctopMenu = document.querySelectorAll('.desctop-menu__icon');
+	for (let i = 0; i < iconsDesctopMenu.length; i++) {
+		let iconDesctopMenu = iconsDesctopMenu[i];
+		iconDesctopMenu.addEventListener('click', function() {
+			if (!iconDesctopMenu.parentNode.classList.contains('_active')) {
+				for (let i = 0; i < iconsDesctopMenu.length; i++) {
+					if (iconsDesctopMenu[i].parentNode.classList.contains('_active')) {
+						iconsDesctopMenu[i].parentNode.classList.remove('_active');
+					}
+				}
+			}
+			iconDesctopMenu.parentNode.classList.toggle('_active');
+		})
+	}
+}
+
+document.addEventListener('DOMContentLoaded', showItemDesctopMenu);
+
 //lazy-load
 "use strict"
 function lazyImage() {
