@@ -2686,6 +2686,16 @@ function showItemDesctopMenu() {
 		})
 	}
 
+	let linksDesctopMenu = document.querySelectorAll('.desctop-menu__link');
+	for (let i = 0; i < linksDesctopMenu.length; i++) {
+		let linkDesctopMenu = linksDesctopMenu[i];
+		linkDesctopMenu.addEventListener('click', function() {
+			if (linkDesctopMenu.parentNode.classList.contains('_active')) {
+				linkDesctopMenu.parentNode.classList.remove('_active');
+			}
+		})
+	}
+
 	document.addEventListener('click', function(e) {
 		for (let i = 0; i < iconsDesctopMenu.length; i++) {
 			let iconDesctopMenu = iconsDesctopMenu[i];
