@@ -2431,7 +2431,7 @@ if (link.length > 0) {
 		el.addEventListener('click', function (e) {
 			let target_block_class = el.getAttribute('href').replace('#', '');
 			//let target_block = document.querySelector('.' + target_block_class);
-			let target_block = document.querySelector(`a[name='${target_block_class}']`);
+			let target_block = document.querySelector(`a[id='${target_block_class}']`);
 			console.log(target_block);
 			_goto(target_block, 300);
 			e.preventDefault();
@@ -2448,9 +2448,9 @@ if (link.length > 0) {
 		}
 		for (let index = 0; index < blocks.length; index++) {
 			let block = blocks[index];
-			let block_item = document.querySelector(`a[name='${block}']`);
+			let block_item = document.querySelector(`a[id='${block}']`);
 			let block_next = blocks[index + 1];
-			let block_item_next = document.querySelector(`a[name='${block_next}']`);
+			let block_item_next = document.querySelector(`a[id='${block_next}']`);
 			let header_height = document.querySelector('.header').offsetHeight;
 			if (block_item && block_item_next) {
 				let block_offset = offset(block_item).top;
@@ -2577,18 +2577,20 @@ const aboutShare = document.querySelector('.contents-about__icon_social');
 if (aboutShare) {
 	const aboutBodyIcon = document.querySelector('.contents-about__social');
 	const aboutIconLinks = aboutBodyIcon.querySelectorAll('.contents-about__social-icon');
-	aboutShare.addEventListener('click', function() {
+	aboutShare.addEventListener('click', function(e) {
+		e.stopPropagation();
 		aboutBodyIcon.classList.toggle('_active');
 	});
 
 	for (let i = 0; i < aboutIconLinks.length; i++) {
 		let aboutIconLink = aboutIconLinks[i];
-		aboutIconLink.addEventListener('click', function() {
+		aboutIconLink.addEventListener('click', function(e) {
+			e.stopPropagation();
 			aboutBodyIcon.classList.remove('_active');
 		});
 	}
 
-	/*document.addEventListener('click', function(e) {
+	document.addEventListener('click', function(e) {
 		const target = e.target;
 		const its_aboutBodyIcon = target == aboutBodyIcon || aboutBodyIcon.contains(target);
 		const its_aboutShare = target == aboutShare;
@@ -2596,7 +2598,7 @@ if (aboutShare) {
 		if (!its_aboutBodyIcon && !its_aboutShare && aboutBodyIcon_is_active) {
 			aboutBodyIcon.classList.remove('_active');
 		}
-	});*/
+	});
 }
 
 //AJAX
