@@ -302,7 +302,7 @@ body._lock {
 }
 
 .info-header__item_phone .info-header__text::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: -3px;
@@ -475,7 +475,7 @@ body._lock {
 }
 
 .btn::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 1;
   top: 0;
@@ -496,9 +496,9 @@ body._lock {
   opacity: 1;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
+input[type=text],
+input[type=email],
+input[type=tel],
 textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -604,7 +604,7 @@ textarea {
 }
 
 .popup__body::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 97%;
   height: 10px;
@@ -632,7 +632,7 @@ textarea {
 
 .popup__close::after,
 .popup__close::before {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(50% - 1px);
   width: 100%;
@@ -711,7 +711,7 @@ textarea {
 }
 
 .popup__link::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: 8px;
@@ -816,7 +816,7 @@ textarea {
 }
 
 .form-popup__block a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: 8px;
@@ -875,7 +875,7 @@ textarea.form-popup__input {
 }
 
 .title-section::after {
-  content: '';
+  content: "";
   width: 100px;
   height: 4px;
   background-color: #009de5;
@@ -924,7 +924,7 @@ textarea.form-popup__input {
 }
 
 .preview__listelem::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 32px;
   height: 32px;
@@ -940,7 +940,7 @@ textarea.form-popup__input {
 }
 
 .info::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 2;
   width: 1251px;
@@ -1009,7 +1009,7 @@ textarea.form-popup__input {
 }
 
 .page-form__body::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 1.5%;
@@ -1023,7 +1023,7 @@ textarea.form-popup__input {
 }
 
 .page-form__body::before {
-  content: '24/7';
+  content: "24/7";
   position: absolute;
   z-index: 5;
   top: 0;
@@ -1229,7 +1229,7 @@ textarea.form-popup__input {
 }
 
 .item-conditions__image::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 30px;
   right: 0;
@@ -1416,7 +1416,7 @@ textarea.form-popup__input {
 }
 
 .table-price__icon::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1456,7 +1456,7 @@ textarea.form-popup__input {
   height: 26px;
   vertical-align: middle;
   background: url("../img/icons/sprite-icon.png") no-repeat;
-  background-position: -1px -0px;
+  background-position: -1px 0px;
   cursor: pointer;
 }
 
@@ -1498,7 +1498,7 @@ textarea.form-popup__input {
 }
 
 .feedback__content::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 1;
   top: 0;
@@ -1566,7 +1566,7 @@ textarea.form-popup__input {
 }
 
 .feedback__button-next::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 21px;
   height: 21px;
@@ -1826,7 +1826,7 @@ textarea.form-popup__input {
 }
 
 .spollers::after {
-  content: '';
+  content: "";
   width: 97%;
   height: 10px;
   border-bottom-left-radius: 3px;
@@ -1875,7 +1875,7 @@ textarea.form-popup__input {
 
 .spollers__title::after,
 .spollers__title::before {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(50% - 1.5px);
   width: 15px;
@@ -2017,7 +2017,7 @@ textarea.form-popup__input {
 
   .header__content::after {
     display: inline-block;
-    content: '';
+    content: "";
     position: absolute;
     z-index: 1;
     top: 0;
@@ -2130,7 +2130,7 @@ textarea.form-popup__input {
   }
 
   .menu-header__link::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 1px;
     height: 26px;
